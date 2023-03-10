@@ -2,6 +2,21 @@
 .navbar {
   height: 100px;
   box-shadow: 10px 10px 20px #051020;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/*********** NAVBAR STYLES *************/
+.navbar > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.navbar > div > a {
+  color: #a4b0cd;
+  font-family: 'font-moni', sans-serif;
+  font-size: var(--fz-xs);
+  text-decoration: none;
+}
