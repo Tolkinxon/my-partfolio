@@ -1,5 +1,9 @@
-.container {
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(10, 25, 47, 0.85);
+
+
+/*********** NAVBAR STYLES *************/
+.navbar {
+  height: 100px;
+  border: 2px solid red;
 }
+
+/*********** NAVBAR STYLES *************/
