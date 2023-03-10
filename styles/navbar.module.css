@@ -1,9 +1,7 @@
-
-
 /*********** NAVBAR STYLES *************/
 .navbar {
   height: 100px;
-  border: 2px solid red;
+  box-shadow: 10px 10px 20px #051020;
 }
 
 /*********** NAVBAR STYLES *************/
