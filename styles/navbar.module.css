@@ -14,12 +14,16 @@
   align-items: center;
   justify-content: space-between;
   width: 500px;
-  border: 2px solid red;
 }
 
 .navbar > div > a {
   color: #a4b0cd;
   font-family: 'font-moni', sans-serif;
-  font-size: var(--fz-xs);
+  font-size: 0.8rem;
   text-decoration: none;
+}
+
+.navbar > div > a > span {
+  margin-right: 5px;
+  color: #62f9d6;
 }
