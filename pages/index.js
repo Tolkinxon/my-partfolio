@@ -1,15 +1,17 @@
 import Head from 'next/head'
+import Navbar from '../components/Navbar'
+import '../styles/navbar.module.css'
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Tesla clone</title>
+        <title>my portfolio</title>
         <meta name="Tolkinxon" content="about tesla company" />
       </Head>
-    
-        <h1>hello world</h1>
-    
+      <div className="container">
+        
+      </div>
     </>
   )
 }
