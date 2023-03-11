@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
+import Icons from '@/components/Icons'
+
 
 export default function Home() {
   return (
@@ -17,8 +19,7 @@ export default function Home() {
       </Head>
       <div className="container">
         <Navbar />
-
-     
+        <Icons />
       </div>
     </>
   )
