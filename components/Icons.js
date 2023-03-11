@@ -9,6 +9,7 @@ const Icons = () => {
     <i class="fa-brands fa-square-twitter"></i>
     <i class="fa-brands fa-linkedin"></i>
     <i class="fa-brands fa-codepen"></i>
+    <div className='line'></div>
   </div>
   )
 }
