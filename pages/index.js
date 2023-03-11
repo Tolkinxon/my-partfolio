@@ -14,6 +14,7 @@ export default function Home() {
         <div className="scroll">
           <i class="fa-brands fa-github"></i>
           <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-twitter"></i>
           
         </div>
       </div>
