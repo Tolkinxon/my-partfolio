@@ -17,7 +17,8 @@ export default function Home() {
       </Head>
       <div className="container">
         <Navbar />
-        <div className="scroll">
+
+        <div className="icons">
           <i class="fa-brands fa-square-github"></i>
           <i class="fa-brands fa-square-instagram"></i>
           <i class="fa-brands fa-square-twitter"></i>
