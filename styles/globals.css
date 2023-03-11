@@ -15,12 +15,22 @@
 .icons {
   position: fixed;
   bottom: 0px;
-  left: 40px;
+  left: 50px;
   display: inline-block;
-  border: 2px solid red;
 }
-.icons > i {
+
+.icons > svg {
   display: block;
+  margin-bottom: 28px;
+  width: 20px;
+  height: 20px;
+  color: #a8b2d1;
+}
+
+.icons > svg:hover {
+  color: #62f9d6;
+  transform: translateY(-3px);
+  transition: all 0.5s;
 }
 
 .icons > .line {
