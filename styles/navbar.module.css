@@ -50,8 +50,8 @@
 }
 
 .navbar > div > button:hover {
-  background-color: #62f9d6;
-  opacity: 0.1;
+  background-color: rgba(100, 255, 218, 0.1);
 }
+
 
 /*********** NAVBAR STYLES *************/

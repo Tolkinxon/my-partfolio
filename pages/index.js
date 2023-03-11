@@ -10,6 +10,7 @@ export default function Home() {
       </Head>
       <div className="container">
         <Navbar />
+        <div className='scroll'></div>
       </div>
     </>
   )
