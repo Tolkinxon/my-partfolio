@@ -7,15 +7,21 @@ export default function Home() {
       <Head>
         <title>my portfolio</title>
         <meta name="Tolkinxon" content="about tesla company" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
       </Head>
       <div className="container">
         <Navbar />
         <div className="scroll">
-          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-square-github"></i>
           <i class="fa-brands fa-square-instagram"></i>
           <i class="fa-brands fa-square-twitter"></i>
-          
+          <i class="fa-brands fa-linkedin"></i>
         </div>
       </div>
     </>
