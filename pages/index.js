@@ -4,9 +4,11 @@ import Icons from '@/components/Icons'
 import Header from '../components/Header'
 
 export default function Home() {
-  window.addEventListener('scroll', () => {
-    console.log('hello world')
-  })
+
+  const logging = (e) => {
+    console.log(e);
+  }
+ 
 
   return (
     <>
@@ -14,7 +16,7 @@ export default function Home() {
         <title>my portfolio</title>
         <meta name="Tolkinxon" content="about tesla company" />
       </Head>
-      <div className="container">
+      <div className="container" onScroll={(e) => logging(e)}>
         <Navbar />
         <Icons />
         <div className="content">
