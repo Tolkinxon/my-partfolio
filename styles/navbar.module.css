@@ -11,6 +11,7 @@
   background-color: rgba(10, 25, 47, 0.85);
   box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
   backdrop-filter: blur(10px);
+  transition: all 0.3s;
 }
 
 .navbar button {
