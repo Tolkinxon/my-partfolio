@@ -3,16 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600&family=Poppins:wght@100;400&family=Roboto&display=swap');
 /*********** NAVBAR STYLES *************/
 .navbar {
-  position: relative;
-  height: 100px;
-  box-shadow: 10px 10px 20px #051020;
+  position: fixed;
+  height: 70px;
+  width: 100vw;
   display: flex;
   align-items: center;
+  background-color: rgba(10, 25, 47, 0.85);
+  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+  backdrop-filter: blur(10px);
 }
 
 .navbar > div {
   position: absolute;
-  right: 40px;
+  right: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;

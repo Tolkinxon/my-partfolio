@@ -16,6 +16,8 @@
   margin: 0px auto;
   height: 1200px;
   width: calc(100vw - 370px);
+  display: flex;
+  justify-content: center;
 }
 
 /**************  ALL CONTENTS PART ******/
@@ -121,6 +123,7 @@
   font-weight: 500;
   letter-spacing: 1px;
   margin-left: 15px;
+  font-size: 0.8rem;
 }
 
 .button:hover {
