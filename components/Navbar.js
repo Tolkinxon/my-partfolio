@@ -4,9 +4,6 @@ import styles from '../styles/navbar.module.css'
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-
-
-      
       <div>
         <a href='#'><span>01. </span> About</a>
         <a href='#'><span>02. </span> Experience</a>

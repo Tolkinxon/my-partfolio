@@ -11,12 +11,32 @@
   overflow: scroll;
 }
 
-/****************** ICON'S CSS CODES ***********/
+/****************** ICON'S CSS CODES  || ***********/
+/*                                    \/           */
 .icons {
   position: fixed;
   bottom: 0px;
   left: 50px;
   display: inline-block;
+}
+
+.email {
+  position: fixed;
+  bottom: 0px;
+  right: 50px;
+}
+
+.email > span:nth-child(1) {
+  transform: rotate(90deg);
+  border: 2px solid red;
+  
+}
+
+.email .lane {
+  display: inline-block;
+  width: 1px;
+  height: 90px;
+  background-color: #a8b2d1;
 }
 
 .icons > svg {
@@ -33,14 +53,15 @@
   transform: translateY(-5px);
 }
 
-.icons > .line {
+.icons .line {
   width: 1px;
   height: 90px;
   background-color: #a8b2d1;
   margin: 0px auto;
 }
 
-/****************** ICON'S CSS CODES ***********/
+/*                                    /\            */
+/****************** ICON'S CSS CODES  ||  ***********/
 
 /*********** SCROLL STYLES ************/
 .scroll {
