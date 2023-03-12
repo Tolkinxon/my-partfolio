@@ -21,22 +21,23 @@
 }
 
 .email {
+  display: flex;
+  align-items: center;
+  height: 20px;
   position: fixed;
-  bottom: 0px;
+  bottom: -20px;
   right: 50px;
-}
-
-.email > span:nth-child(1) {
+  transform-origin: right top;
   transform: rotate(90deg);
-  border: 2px solid red;
-  
+  color: #a8b2d1;
 }
 
 .email .lane {
   display: inline-block;
-  width: 1px;
-  height: 90px;
+  width: 90px;
+  height: 1px;
   background-color: #a8b2d1;
+  margin-left: 28px;
 }
 
 .icons > svg {
