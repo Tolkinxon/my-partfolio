@@ -16,11 +16,19 @@
 
 /********* SIX CORNER ********/
 .box_container {
-  width: 20px;
-  height: 20px;
-  border: 2px solid red;
+  width: 36px;
+  height: 36px;
   margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
+
+.box_container:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
 .box {
   position: absolute;
   width: 36px;
@@ -28,6 +36,13 @@
   border-right: 2px solid #62f9d6;
   border-left: 2px solid #62f9d6;
   transform-origin: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #62f9d6;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: sans-serif;
 }
 
 .box:nth-child(1) {

@@ -10,6 +10,7 @@ const Navbar = ({ scroll }) => {
         <div className={styles.box}></div>
         <div className={styles.box}></div>
         <div className={styles.box}></div>
+        <div className={styles.box}>S</div>
       </div>
 
       <div className={styles.selects}>
