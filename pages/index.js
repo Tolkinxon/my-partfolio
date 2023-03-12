@@ -3,8 +3,11 @@ import Navbar from '../components/Navbar'
 import Icons from '@/components/Icons'
 import Header from '../components/Header'
 
-
 export default function Home() {
+  window.addEventListener('scroll', () => {
+    console.log('hello world')
+  })
+
   return (
     <>
       <Head>
