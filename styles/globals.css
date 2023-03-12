@@ -32,6 +32,16 @@
   color: #a8b2d1;
 }
 
+.email span:nth-child(1) {
+  transition: all 0.5s;
+  font-style: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  letter-spacing: 2px;
+}
+.email span:nth-child(1):hover {
+  color: #62f9d6;
+  transform: translateX(-5px);
+}
+
 .email .lane {
   display: inline-block;
   width: 90px;
@@ -63,6 +73,9 @@
 
 /*                                    /\            */
 /****************** ICON'S CSS CODES  ||  ***********/
+
+
+
 
 /*********** SCROLL STYLES ************/
 .scroll {
