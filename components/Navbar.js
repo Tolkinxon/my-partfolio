@@ -1,15 +1,25 @@
 import React from 'react'
 import styles from '../styles/navbar.module.css'
 
-const Navbar = () => {
+const Navbar = ({ scroll }) => {
+  console.log(scroll)
+
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar} style={{top: scroll}}>
       <div>
-        <a href='#'><span>01. </span> About</a>
-        <a href='#'><span>02. </span> Experience</a>
-        <a href='#'><span>03. </span> Work</a>
-        <a href='#'><span>04. </span> Contact</a>
-        <button className='button'>Resume</button>
+        <a href="#">
+          <span>01. </span> About
+        </a>
+        <a href="#">
+          <span>02. </span> Experience
+        </a>
+        <a href="#">
+          <span>03. </span> Work
+        </a>
+        <a href="#">
+          <span>04. </span> Contact
+        </a>
+        <button className="button">Resume</button>
       </div>
     </nav>
   )
