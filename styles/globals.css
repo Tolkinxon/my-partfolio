@@ -25,12 +25,12 @@
   width: 20px;
   height: 20px;
   color: #a8b2d1;
+  transition: all 0.5s;
 }
 
 .icons > svg:hover {
   color: #62f9d6;
-  transform: translateY(-3px);
-  transition: all 0.5s;
+  transform: translateY(-5px);
 }
 
 .icons > .line {
@@ -42,6 +42,7 @@
 
 /****************** ICON'S CSS CODES ***********/
 
+/*********** SCROLL STYLES ************/
 .scroll {
   height: 5000px;
   border: 2px solid red;
@@ -63,3 +64,4 @@
   /* border-bottom: 100px solid #0a192f; */
   height: 10px;
 }
+/*********** SCROLL STYLES ************/
