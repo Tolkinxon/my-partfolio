@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Icons from '@/components/Icons'
+import Header from '../components/Header'
 
 
 export default function Home() {
@@ -13,6 +14,9 @@ export default function Home() {
       <div className="container">
         <Navbar />
         <Icons />
+        <div className="content">
+          <Header />
+        </div>
       </div>
     </>
   )

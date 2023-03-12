@@ -9,7 +9,7 @@ const Navbar = () => {
         <a href='#'><span>02. </span> Experience</a>
         <a href='#'><span>03. </span> Work</a>
         <a href='#'><span>04. </span> Contact</a>
-        <button>Resume</button>
+        <button className='button'>Resume</button>
       </div>
     </nav>
   )
