@@ -14,14 +14,19 @@
   transition: all 0.4s;
 }
 
-
 /********* SIX CORNER ********/
+.box_container {
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+  margin-left: 50px;
+}
 .box {
   position: absolute;
   width: 36px;
   height: 20px;
-  border-right: 2px solid red;
-  border-left: 2px solid red;
+  border-right: 2px solid #62f9d6;
+  border-left: 2px solid #62f9d6;
   transform-origin: center center;
 }
 
@@ -31,9 +36,7 @@
 .box:nth-child(2) {
   transform: rotate(120deg);
 }
-
 /********* SIX CORNER ********/
-
 
 .navbar > .selects {
   position: absolute;
