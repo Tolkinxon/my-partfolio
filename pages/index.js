@@ -19,6 +19,9 @@ export default function Home() {
     if (variable2.current > variable.current) {
       setHideNavbar('0px')
     }
+    if (0 === variable.current) {
+      setHideNavbar('15px')
+    }
   }
 
   return (

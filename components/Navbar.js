@@ -7,6 +7,13 @@ const Navbar = ({ scroll }) => {
   return (
     <nav className={styles.navbar} style={{top: scroll}}>
       <div>
+        <div className={styles.box}></div>
+        <div className={styles.box}></div>
+        <div className={styles.box}></div>
+      </div>
+
+
+      <div className={styles.selects}>
         <a href="#">
           <span>01. </span> About
         </a>
@@ -21,6 +28,7 @@ const Navbar = ({ scroll }) => {
         </a>
         <button className="button">Resume</button>
       </div>
+
     </nav>
   )
 }

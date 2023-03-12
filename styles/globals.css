@@ -90,10 +90,6 @@
 /****************** ICON'S CSS CODES  ||  ***********/
 
 /*********** SCROLL STYLES ************/
-.scroll {
-  height: 5000px;
-  border: 2px solid red;
-}
 
 ::-webkit-scrollbar {
   width: 12px;

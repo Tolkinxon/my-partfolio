@@ -5,20 +5,37 @@
 .navbar {
   position: fixed;
   height: 70px;
-  width: 100vw;
+  width: calc(100vw - 12px);
   display: flex;
   align-items: center;
   background-color: rgba(10, 25, 47, 0.85);
   box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
   backdrop-filter: blur(10px);
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 
-.navbar button {
-  margin-left: 15px;
+
+/********* SIX CORNER ********/
+.box {
+  position: absolute;
+  width: 36px;
+  height: 20px;
+  border-right: 2px solid red;
+  border-left: 2px solid red;
+  transform-origin: center center;
 }
 
-.navbar > div {
+.box:nth-child(1) {
+  transform: rotate(60deg);
+}
+.box:nth-child(2) {
+  transform: rotate(120deg);
+}
+
+/********* SIX CORNER ********/
+
+
+.navbar > .selects {
   position: absolute;
   right: 50px;
   display: flex;
@@ -26,7 +43,7 @@
   justify-content: space-between;
 }
 
-.navbar > div > a {
+.navbar > .selects > a {
   color: #a4b0cd;
   font-family: sans-serif;
   font-size: 0.8rem;
@@ -36,13 +53,17 @@
   padding: 12px;
 }
 
-.navbar > div > a > span {
+.navbar > .selects > a > span {
   margin-right: 1px;
   color: #62f9d6;
 }
 
-.navbar > div > a:hover {
+.navbar > .selects > a:hover {
   color: #62f9d6;
+}
+
+.navbar button {
+  margin-left: 15px;
 }
 
 /*********** NAVBAR STYLES *************/
