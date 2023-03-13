@@ -18,8 +18,8 @@
   width: calc(100vw - 370px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   border: 2px solid blue;
+  align-items: center;
 }
 
 /**************  ALL CONTENTS PART ******/
