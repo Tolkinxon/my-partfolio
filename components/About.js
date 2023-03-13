@@ -2,8 +2,18 @@ import React from 'react'
 import Image from 'next/image'
 import style from '../styles/about.module.css'
 import myImage from '../public/myImage.jpg'
+import { useState } from 'react'
 
 const About = () => {
+  const [isLogging, setIsLogging] = useState(false)
+
+  const logging = () => {
+    setIsLogging(true)
+  }
+  const outLogging = () => {
+    setIsLogging(false)
+  }
+
   return (
     <div className={style.about}>
       <div className={style.content}>
@@ -46,8 +56,14 @@ const About = () => {
         </div>
       </div>
 
-      <div className={style.image_wrapper}>
-        <Image src={myImage} className={style.image} />
+      <div className={style.image_wrapper} style={{top: isLogging ? '80px' : '90px',
+                                                   left: isLogging ? '-10px'}}>
+        <Image
+          src={myImage}
+          className={style.image}
+          onMouseEnter={() => logging()}
+          onMouseOut={() => outLogging()}
+        />
       </div>
     </div>
   )
