@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .p {
@@ -13,6 +13,7 @@
   max-width: 540px;
   color: #8892b0;
   font-family: sans-serif;
+  line-height: 1.5;
 }
 
 .h1,
