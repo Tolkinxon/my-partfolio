@@ -48,7 +48,6 @@ const About = () => {
 
       <div className={style.image_wrapper}>
         <Image src={myImage} className={style.image} />
-        <div className={style.image_background}></div>
       </div>
     </div>
   )

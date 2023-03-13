@@ -12,6 +12,7 @@
   box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
   backdrop-filter: blur(10px);
   transition: all 0.4s;
+  z-index: 20;
 }
 
 /********* SIX CORNER ********/

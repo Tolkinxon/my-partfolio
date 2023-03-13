@@ -38,21 +38,24 @@
   letter-spacing: 0.7px;
 }
 .image_wrapper {
+  margin-top: 100px;
   position: relative;
-  padding-top: 70px;
-  width: 35%;
-}
-
-.image,
-.image_background {
-  width: 80%;
-  height: 60%;
+  width: 30%;
   border-radius: 5px;
+  height: 50%;
+  border: 2px solid #62f9d6;
 }
 
-.image_background {
-  position: absolute;
-  border: 2px solid #62f9d6;
-  top: 10px;
-  left: 10px;
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: relative;
+  top: -20px;
+  left: -20px;
+}
+
+.image:hover,
+.image_wrapper {
+  border: 2px solid red;
 }
