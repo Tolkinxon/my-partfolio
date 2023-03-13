@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Icons from '@/components/Icons'
 import Header from '../components/Header'
+import About from '../components/About'
 import { useRef, useState } from 'react'
 
 export default function Home() {
@@ -35,6 +36,7 @@ export default function Home() {
         <Icons />
         <div className="content">
           <Header />
+          <About />
         </div>
       </div>
     </>

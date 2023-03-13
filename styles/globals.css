@@ -11,14 +11,13 @@
   overflow: scroll;
 }
 
-
 /**************  ALL CONTENTS PART ******/
 .content {
   margin: 0px auto;
   height: 5200px;
   width: calc(100vw - 370px);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 /**************  ALL CONTENTS PART ******/
