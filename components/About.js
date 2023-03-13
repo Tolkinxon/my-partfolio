@@ -5,10 +5,10 @@ import myImage from '../public/myImage.jpg'
 
 const About = () => {
   return (
-    <div className="about">
+    <div className={style.about}>
       <div className={style.content}>
         <span>
-          01. <span>About me</span> <span className={style.line}></span>
+          01. <span>About me</span> <div className={style.line}></div>
         </span>
         <p>
           Hello! My name is Brittany and I enjoy creating things that live on
@@ -18,7 +18,7 @@ const About = () => {
         </p>
         <br />
         <p>
-          Fast-forward to today, and I’ve had the privilege of working at an
+          Fast-forward to today, and Ive had the privilege of working at an
           advertising agency, a start-up, a huge corporation, and a student-led
           design studio. My main focus these days is building accessible,
           inclusive products and digital experiences at Upstatement for a
@@ -29,7 +29,7 @@ const About = () => {
         <p>
           I also recently launched a course that covers everything you need to
           build a web app with the Spotify API using Node & React. <br /> <br />
-          Here are a few technologies I’ve been working with recently:
+          Here are a few technologies Ive been working with recently:
         </p>
 
         <div className={style.wrapperLi}>
