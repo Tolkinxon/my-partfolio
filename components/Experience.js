@@ -9,7 +9,9 @@ const Experience = () => {
       </h1>
       <div>
         <span className={style.selecting}>
-            <p></p>
+          <p>Mohirdev</p>
+          <p>Home</p>
+          <p>IT centre</p>
         </span>
         <span className={style.selecting_about}></span>
       </div>
