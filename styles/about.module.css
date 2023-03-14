@@ -37,6 +37,22 @@
   line-height: 1.3;
   letter-spacing: 0.7px;
 }
+
+.wrapperLi {
+  display: flex;
+}
+
+.wrapperLi li {
+  list-style-type: none;
+}
+
+.wrapperLi div {
+  width: 1px;
+  height: 1px;
+  border-left: 20px solid red;
+  border-top: 10px solid;
+}
+
 .image_wrapper {
   position: relative;
   top: 90px;

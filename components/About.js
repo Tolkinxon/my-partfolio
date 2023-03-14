@@ -44,7 +44,9 @@ const About = () => {
 
         <div className={style.wrapperLi}>
           <ul>
-            <li>JavaScript (ES6+)</li>
+            <li>
+              <div></div> JavaScript (ES6+)
+            </li>
             <li>React</li>
             <li>Node.js</li>
           </ul>
@@ -56,15 +58,22 @@ const About = () => {
         </div>
       </div>
 
-      <div className={style.image_wrapper} style={{top: isLogging ? '85px' : '90px',
-                                                   left: isLogging ? '-5px' : "0px"}}>
+      <div
+        className={style.image_wrapper}
+        style={{
+          top: isLogging ? '85px' : '90px',
+          left: isLogging ? '-5px' : '0px',
+        }}
+      >
         <Image
           src={myImage}
           className={style.image}
           onMouseEnter={() => logging()}
           onMouseOut={() => outLogging()}
-          style={{top: isLogging ? '-15px' : '-20px',
-                       left: isLogging ? '-15px' : "-20px"}}
+          style={{
+            top: isLogging ? '-15px' : '-20px',
+            left: isLogging ? '-15px' : '-20px',
+          }}
         />
       </div>
     </div>
