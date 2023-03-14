@@ -56,15 +56,15 @@ const About = () => {
         </div>
       </div>
 
-      <div className={style.image_wrapper} style={{top: isLogging ? '80px' : '90px',
-                                                   left: isLogging ? '-10px' : "0px"}}>
+      <div className={style.image_wrapper} style={{top: isLogging ? '85px' : '90px',
+                                                   left: isLogging ? '-5px' : "0px"}}>
         <Image
           src={myImage}
           className={style.image}
           onMouseEnter={() => logging()}
           onMouseOut={() => outLogging()}
-          style={{top: isLogging ? '-10px' : '-20px',
-                       left: isLogging ? '-10px' : "-20px"}}
+          style={{top: isLogging ? '-15px' : '-20px',
+                       left: isLogging ? '-15px' : "-20px"}}
         />
       </div>
     </div>
