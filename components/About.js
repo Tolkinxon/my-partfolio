@@ -59,8 +59,8 @@ const About = () => {
       <div
         className={style.image_wrapper}
         style={{
-          top: isLogging ? '85px' : '90px',
-          left: isLogging ? '-5px' : '0px',
+          top: isLogging ? '-40px' : '-35px',
+          left: isLogging ? '10px' : '15px',
         }}
       >
         <Image
