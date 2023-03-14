@@ -4,6 +4,7 @@ import Icons from '@/components/Icons'
 import Header from '../components/Header'
 import About from '../components/About'
 import { useRef, useState } from 'react'
+import Experience from '@/components/Experience'
 
 export default function Home() {
   const variable = useRef(null)
@@ -37,6 +38,7 @@ export default function Home() {
         <div className="content">
           <Header />
           <About />
+          <Experience />
         </div>
       </div>
     </>

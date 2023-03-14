@@ -8,18 +8,29 @@ const Experience = () => {
         <span>02.</span> Where I've Worked <span></span>
       </h1>
       <div>
-        <span className={style.selecting}>
+        <div className={style.selecting}>
           <p>Mohirdev</p>
           <p>Home</p>
           <p>IT centre</p>
-        </span>
-        <span className={style.selecting_about}>
-          <h2></h2>
-          <h2></h2>
-          <h2></h2>
-
-
-        </span>
+        </div>
+        <div className={style.selecting_about}>
+          <h2>Mohirder</h2>
+          <p>January - june 2017</p>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              corporis error at ut ipsam ipsa ad repellendus vero dolore amet
+              exercitationem, dolores commodi deleniti ratione similique
+              sapiente, saepe quod facilis!
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              corporis error at ut ipsam ipsa ad repellendus vero dolore amet
+              exercitationem, dolores commodi deleniti ratione similique
+              sapiente, saepe quod facilis!
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   )

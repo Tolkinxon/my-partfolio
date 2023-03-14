@@ -1,0 +1,28 @@
+.experience {
+  margin: 0px auto;
+  width: 50vw;
+}
+
+.experience > div {
+  display: flex;
+}
+
+.selecting {
+  width: 20%;
+}
+
+.selecting > p {
+  border-left: 2px solid #233554;
+  color: #8892b0;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.5;
+}
+.selecting > p:hover {
+  background-color: #112240;
+  color: #64ffda;
+}
+
+.selecting_about {
+  width: 80%;
+}
