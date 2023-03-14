@@ -44,14 +44,19 @@
 
 .wrapperLi li {
   list-style-type: none;
+  vertical-align: center;
+
 }
 
-.wrapperLi div {
-  width: 1px;
-  height: 1px;
-  border-left: 20px solid red;
-  border-top: 10px solid;
+.wrapperLi li::before{
+  content: '▹';
 }
+
+/* .wrapperLi span {
+  color: #62f9d6;
+  font-size: 14px;
+  line-height: 12px;
+} */
 
 .image_wrapper {
   position: relative;
@@ -61,6 +66,7 @@
   border-radius: 5px;
   border: 2px solid #62f9d6;
   transition: all 0.3s ease;
+  align-self: center;
 }
 
 .image {

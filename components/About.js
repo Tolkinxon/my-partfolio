@@ -44,9 +44,7 @@ const About = () => {
 
         <div className={style.wrapperLi}>
           <ul>
-            <li>
-              <div></div> JavaScript (ES6+)
-            </li>
+            <li>JavaScript (ES6+)</li>
             <li>React</li>
             <li>Node.js</li>
           </ul>
