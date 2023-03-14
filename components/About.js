@@ -66,13 +66,20 @@ const About = () => {
         <Image
           src={myImage}
           className={style.image}
-          onMouseEnter={() => logging()}
-          onMouseOut={() => outLogging()}
           style={{
             top: isLogging ? '-15px' : '-20px',
             left: isLogging ? '-15px' : '-20px',
           }}
         />
+        <div
+          className={style.image}
+          style={{
+            top: isLogging ? '-15px' : '-20px',
+            left: isLogging ? '-15px' : '-20px',
+          }}
+          onMouseEnter={() => logging()}
+          onMouseOut={() => outLogging()}
+        ></div>
       </div>
     </div>
   )
