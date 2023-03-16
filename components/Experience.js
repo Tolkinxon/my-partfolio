@@ -16,7 +16,7 @@ const Experience = () => {
   },[])
   
 
-  console.log(content)
+
 
   return (
     <div className={style.experience}>
