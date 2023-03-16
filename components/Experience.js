@@ -7,7 +7,8 @@ const Experience = () => {
   const [content, setContent] = useState([])
 
   const Active = () => {
-    console.log('hello world');
+   
+
   }
 
   useEffect(() => {
