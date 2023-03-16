@@ -3,11 +3,14 @@ import style from '../styles/experience.module.css'
 import { useState, useEffect } from 'react'
 
 const Experience = () => {
-  const [active, setActive] = useState('')
+  const [active, setActive] = useState({})
   const [content, setContent] = useState([])
 
   const Active = () => {
-   
+    setActive({
+      backgroundColor: '#112240',
+      color: '#64ffda'
+    })
 
   }
 

@@ -46,8 +46,7 @@
   font-family: sans-serif;
 }
 
-.selecting > p:hover
-/* .selecting > p:focus { */ {
+.selecting > p:hover{
   background-color: #112240;
   color: #64ffda;
 }
