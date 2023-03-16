@@ -1,17 +1,17 @@
 import React from 'react'
 import style from '../styles/experience.module.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const Experience = () => {
+  const [active, setActive] = useState('')
+  const [content, setContent] = useState([])
 
-  const [ active, setActive] = useState('')
-
+  useEffect(() => {
+    setContent(['Mohirdev', 'Home', 'IT centre'])
+  },[])
   
 
-
-
-
-
+  console.log(content)
 
   return (
     <div className={style.experience}>
@@ -20,9 +20,11 @@ const Experience = () => {
       </h1>
       <div>
         <div className={style.selecting}>
-          <p>Mohirdev</p>
-          <p>Home</p>
-          <p>IT centre</p>
+          {content.map((item) => (
+            <>
+              <p>{item}</p>
+            </>
+          ))}
         </div>
         <div className={style.selecting_about}>
           <h2>Mohirdev</h2>
