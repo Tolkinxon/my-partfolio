@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <div className={style.experience}>
       <h1>
-        <span>02.</span> Where I've Worked <span></span>
+        <span>02.</span> Where I've Worked <span className={style.line}></span>
       </h1>
       <div>
         <div className={style.selecting}>
