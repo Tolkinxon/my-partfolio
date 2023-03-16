@@ -14,7 +14,7 @@ const Experience = () => {
           <p>IT centre</p>
         </div>
         <div className={style.selecting_about}>
-          <h2>Mohirder</h2>
+          <h2>Mohirdev</h2>
           <p>January - june 2017</p>
           <ul>
             <li>
