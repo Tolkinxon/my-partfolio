@@ -6,6 +6,10 @@ const Experience = () => {
   const [active, setActive] = useState('')
   const [content, setContent] = useState([])
 
+  const Active = () => {
+    console.log('hello world');
+  }
+
   useEffect(() => {
     setContent(['Mohirdev', 'Home', 'IT centre'])
   },[])
@@ -22,7 +26,7 @@ const Experience = () => {
         <div className={style.selecting}>
           {content.map((item) => (
             <>
-              <p>{item}</p>
+              <p onClick={Active}>{item}</p>
             </>
           ))}
         </div>
