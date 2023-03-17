@@ -33,6 +33,13 @@
 
 .selecting {
   width: 20%;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  border: 1px solid #64ffda;
+  transition: all 0.5s ease;
 }
 
 .selecting > p {

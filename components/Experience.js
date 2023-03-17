@@ -7,20 +7,23 @@ const Experience = () => {
   const [content, setContent] = useState([])
 
   const Active = (e, id) => {
+    let h = 0
+    if (e !== null) {
+      h = getComputedStyle(e.target).height
+    }
+
+    console.log()
     setActive({
       property: {
         backgroundColor: '#112240',
         color: '#64ffda',
-        borderLeft: '2px solid #64ffda',
-        transition: 'all 2 ease',
+      },
+      scrol: {
+        transform: e !== null ? `translateY(${parseInt(h) * id}px)` : null,
+        height: e !== null ? h : null,
       },
       id: id,
     })
-
-    if (e === null) {
-    } else {
-      console.log(getComputedStyle(e.target).height)
-    }
   }
 
   useEffect(() => {
@@ -35,6 +38,7 @@ const Experience = () => {
       </h1>
       <div>
         <div className={style.selecting}>
+          <div className={style.box} style={active.scrol}></div>
           {content.map((item, idx) => (
             <>
               <p
