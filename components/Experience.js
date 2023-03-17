@@ -31,7 +31,7 @@ const Experience = () => {
         <div className={style.selecting}>
           {content.map((item, idx) => (
             <>
-              <p key={idx} onClick={() => Active(idx)} style={idx === active.id && active.property}>{item}</p>
+              <p key={idx} onClick={() => Active(idx)} style={idx === active.id ? active.property : null}>{item}</p>
             </>
           ))}
         </div>
