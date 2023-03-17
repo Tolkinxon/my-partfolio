@@ -46,10 +46,12 @@
   font-family: sans-serif;
 }
 
-.selecting > p:hover{
+.selecting > p:hover {
   background-color: #112240;
   color: #64ffda;
 }
+
+
 
 .selecting_about {
   width: 80%;

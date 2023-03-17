@@ -8,19 +8,23 @@ const Experience = () => {
 
   const Active = (id) => {
     setActive({
-      property: {
-        backgroundColor: '#112240',
-        color: '#64ffda',
-        borderLeft: '2px solid #64ffda',
-        transition: 'all 2 ease',
-      },
-      id: id,
+      property : { backgroundColor: '#112240',
+                   color: '#64ffda',
+                   borderLeft: '2px solid #64ffda',
+                   transition: 'all 2 ease'},
+      id: id
     })
+
   }
+
 
   useEffect(() => {
     setContent(['Mohirdev', 'Home', 'IT centre', 'hello world', 'goods'])
-  }, [])
+    Active(0)
+  },[])
+  
+
+
 
   return (
     <div className={style.experience}>
@@ -31,13 +35,7 @@ const Experience = () => {
         <div className={style.selecting}>
           {content.map((item, idx) => (
             <>
-              <p
-                key={idx}
-                onClick={() => Active(idx)}
-                style={idx === active.id ? active.property : null}
-              >
-                {item}
-              </p>
+              <p key={idx} onClick={() => Active(idx)} style={idx === active.id ? active.property : null}>{item}</p>
             </>
           ))}
         </div>
