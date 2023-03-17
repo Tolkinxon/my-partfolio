@@ -6,10 +6,11 @@ const Experience = () => {
   const [active, setActive] = useState({})
   const [content, setContent] = useState([])
 
-  const Active = () => {
+  const Active = (id) => {
     setActive({
-      backgroundColor: '#112240',
-      color: '#64ffda'
+      property : { backgroundColor: '#112240',
+      color: '#64ffda'},
+      id: id
     })
 
   }
@@ -28,9 +29,9 @@ const Experience = () => {
       </h1>
       <div>
         <div className={style.selecting}>
-          {content.map((item) => (
+          {content.map((item, idx) => (
             <>
-              <p onClick={Active}>{item}</p>
+              <p key={idx} onClick={() => Active(idx)} style={idx === active.id && active.property}>{item}</p>
             </>
           ))}
         </div>
