@@ -9,10 +9,6 @@ const Experience = () => {
 
   const element = ref.current
 
-  const element2 = document.getElementById('hello')
-  console.log(element2);
-
-  
 
   const Active = (e, id) => {
     let h = 0
