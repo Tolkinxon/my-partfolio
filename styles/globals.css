@@ -11,8 +11,6 @@
   overflow: scroll;
 }
 
-
-
 /**************  ALL CONTENTS PART ******/
 .content {
   margin: 0px auto;
@@ -24,8 +22,6 @@
 }
 
 /**************  ALL CONTENTS PART ******/
-
-
 
 /****************** ICON'S CSS CODES  || ***********/
 /*                                    \/           */
@@ -130,3 +126,10 @@
   background-color: rgba(100, 255, 218, 0.1);
 }
 /*****************  BUTTON'S CODES **********/
+
+/****** ACTIVE STYLES EXPERIENCE SIDE  ***********/
+.active {
+  background-color: #112240;
+  color: #64ffda;
+}
+/****** ACTIVE STYLES EXPERIENCE SIDE  ***********/

@@ -14,10 +14,6 @@ const Experience = () => {
 
     console.log()
     setActive({
-      property: {
-        backgroundColor: '#112240',
-        color: '#64ffda',
-      },
       scrol: {
         transform: e !== null ? `translateY(${parseInt(h) * id}px)` : null,
         height: e !== null ? h : null,
@@ -42,10 +38,9 @@ const Experience = () => {
           {content.map((item, idx) => (
             <>
               <p
-                className="p"
                 key={idx}
                 onClick={(e) => Active(e, idx)}
-                style={idx === active.id ? active.property : null}
+                className={idx === active.id ? 'active' : null}
               >
                 {item}
               </p>
