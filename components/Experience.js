@@ -27,8 +27,10 @@ const Experience = () => {
     setContent(['Mohirdev', 'Home', 'IT centre', 'hello world', 'goods'])
     Active(null, 0)
 
-    const box = window
-    console.log(box.document.getElementById('hello'))
+    setTimeout(() => {
+      const box = window.document.getElementById('hello')
+      console.log(box)
+    }, 1000)
   }, [])
 
   return (
