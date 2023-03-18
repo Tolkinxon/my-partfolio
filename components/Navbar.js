@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/navbar.module.css'
 
 const Navbar = ({ scroll }) => {
-  console.log(scroll)
+
 
   return (
     <nav className={styles.navbar} style={{ top: scroll }}>
