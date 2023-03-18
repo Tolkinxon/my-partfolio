@@ -1,12 +1,11 @@
 import React from 'react'
-import ReactDOM from "react-dom";
+import ReactDOM from 'react-dom'
 import style from '../styles/experience.module.css'
 import { useState, useEffect } from 'react'
 
 const Experience = () => {
   const [active, setActive] = useState({})
   const [content, setContent] = useState([])
-
 
   const Active = (e, id) => {
     let h = 0
@@ -28,11 +27,8 @@ const Experience = () => {
     setContent(['Mohirdev', 'Home', 'IT centre', 'hello world', 'goods'])
     Active(null, 0)
 
-    const box = document.getElementById('hello')
-
-    console.log(box);
-
- 
+    const box = window
+    console.log(box.document.getElementById('hello'))
   }, [])
 
   return (
@@ -46,8 +42,7 @@ const Experience = () => {
           {content.map((item, idx) => (
             <>
               <p
-              id='hello'
-              
+                id="hello"
                 key={idx}
                 onClick={(e) => Active(e, idx)}
                 className={idx === active.id ? 'p active' : 'p'}
