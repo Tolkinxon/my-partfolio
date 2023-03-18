@@ -1,20 +1,12 @@
 import React from 'react'
 import ReactDOM from "react-dom";
 import style from '../styles/experience.module.css'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 const Experience = () => {
   const [active, setActive] = useState({})
   const [content, setContent] = useState([])
 
-  const ref = useRef(null)
-  const element = ref.current
-
-
-
-
-
-       
 
   const Active = (e, id) => {
     let h = 0
@@ -36,13 +28,11 @@ const Experience = () => {
     setContent(['Mohirdev', 'Home', 'IT centre', 'hello world', 'goods'])
     Active(null, 0)
 
-    if (typeof window === 'object') {
-      // Check if document is finally loaded
-         document.addEventListener("DOMContentLoaded", function () {
-         const el = document.getElementById('hello')
-         console.log(el);
-         })
-        }
+    const box = document.getElementById('hello')
+
+    console.log(box);
+
+ 
   }, [])
 
   return (
@@ -57,7 +47,7 @@ const Experience = () => {
             <>
               <p
               id='hello'
-                ref={ref}
+              
                 key={idx}
                 onClick={(e) => Active(e, idx)}
                 className={idx === active.id ? 'p active' : 'p'}
