@@ -25,13 +25,14 @@ const Experience = () => {
 
   useEffect(() => {
     setContent(['Mohirdev', 'Home', 'IT centre', 'hello world', 'goods'])
-    Active(null, 0)
-
     setTimeout(() => {
       const box = window.document.getElementById('hello')
-      console.log(box)
-    }, 1000)
+      Active(null, 0)
+    }, 1)
+    Active(null, 0)
   }, [])
+
+
 
   return (
     <div className={style.experience}>
