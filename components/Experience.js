@@ -1,10 +1,15 @@
 import React from 'react'
 import style from '../styles/experience.module.css'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 const Experience = () => {
   const [active, setActive] = useState({})
   const [content, setContent] = useState([])
+  const ref = useRef(null)
+
+  const element = ref.current
+
+  
 
   const Active = (e, id) => {
     let h = 0
@@ -38,6 +43,8 @@ const Experience = () => {
           {content.map((item, idx) => (
             <>
               <p
+                id="hello"
+                ref={ref}
                 key={idx}
                 onClick={(e) => Active(e, idx)}
                 className={idx === active.id ? 'p active' : 'p'}
