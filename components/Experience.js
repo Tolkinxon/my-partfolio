@@ -9,6 +9,7 @@ const Experience = () => {
 
   const element = ref.current
 
+  console.log(window)
 
   const Active = (e, id) => {
     let h = 0
@@ -42,7 +43,6 @@ const Experience = () => {
           {content.map((item, idx) => (
             <>
               <p
-                id="hello"
                 ref={ref}
                 key={idx}
                 onClick={(e) => Active(e, idx)}
