@@ -7,17 +7,19 @@ const Experience = () => {
   const [active, setActive] = useState({})
   const [content, setContent] = useState([])
 
-  const Active = (e, id) => {
+  const Active = (e, id, element) => {
     let h = 0
     if (e !== null) {
       h = getComputedStyle(e.target).height
+    }else{
+      h = getComputedStyle(element).height
     }
 
     console.log()
     setActive({
       scrol: {
         transform: e !== null ? `translateY(${parseInt(h) * id}px)` : null,
-        height: e !== null ? h : null,
+        height: h,
       },
       id: id,
     })
@@ -26,10 +28,9 @@ const Experience = () => {
   useEffect(() => {
     setContent(['Mohirdev', 'Home', 'IT centre', 'hello world', 'goods'])
     setTimeout(() => {
-      const box = window.document.getElementById('hello')
-      Active(null, 0)
+      const element = window.document.getElementById('hello')
+      Active(null, 0, element)
     }, 1)
-    Active(null, 0)
   }, [])
 
 
