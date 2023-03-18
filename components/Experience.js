@@ -40,7 +40,7 @@ const Experience = () => {
               <p
                 key={idx}
                 onClick={(e) => Active(e, idx)}
-                className={idx === active.id ? 'active' : null}
+                className={idx === active.id ? 'p active' : 'p'}
               >
                 {item}
               </p>
