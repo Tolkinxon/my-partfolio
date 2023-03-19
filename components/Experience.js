@@ -17,6 +17,11 @@ const Experience = () => {
       h = getComputedStyle(element).height
     }
 
+    setTimeout(() => {
+      setDisplay(true)
+    }, 100)
+    setDisplay(false)
+
     setActive({
       scrol: {
         transform: e !== null ? `translateY(${parseInt(h) * id}px)` : null,
@@ -25,13 +30,6 @@ const Experience = () => {
       id: id,
     })
   }
-
-  useEffect(() => {
-    setTimeout(() => {
-      setDisplay(true)
-    }, 1000)
-    setDisplay(false)
-  }, [select])
 
   useEffect(() => {
     setSelect(['Mohirdev', 'Home', 'IT centre', 'goods'])
