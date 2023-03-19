@@ -5,13 +5,14 @@ import { useState, useEffect } from 'react'
 
 const Experience = () => {
   const [active, setActive] = useState({})
-  const [content, setContent] = useState([])
+  const [select, setSelect] = useState([])
+  
 
   const Active = (e, id, element) => {
     let h = 0
     if (e !== null) {
       h = getComputedStyle(e.target).height
-    }else{
+    } else {
       h = getComputedStyle(element).height
     }
 
@@ -26,14 +27,12 @@ const Experience = () => {
   }
 
   useEffect(() => {
-    setContent(['Mohirdev', 'Home', 'IT centre', 'hello world', 'goods'])
+    setSelect(['Mohirdev', 'Home', 'IT centre', 'hello world', 'goods'])
     setTimeout(() => {
-      const element = window.document.getElementById('hello')
-      Active(null, 0, element)
+      const element = document.getElementById('hello')
+      Active(null, null, element)
     }, 1)
   }, [])
-
-
 
   return (
     <div className={style.experience}>
@@ -43,13 +42,16 @@ const Experience = () => {
       <div>
         <div className={style.selecting}>
           <div className={style.box} style={active.scrol}></div>
-          {content.map((item, idx) => (
+          {select.map((item, idx) => (
             <>
               <p
                 id="hello"
                 key={idx}
                 onClick={(e) => Active(e, idx)}
                 className={idx === active.id ? 'p active' : 'p'}
+                style={
+                  idx === 0 && active.id === null ? { color: '#64ffda' } : null
+                }
               >
                 {item}
               </p>
