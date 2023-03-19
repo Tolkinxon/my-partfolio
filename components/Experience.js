@@ -123,7 +123,7 @@ const Experience = () => {
         </div>
         <div
           className={style.selecting_about}
-          style={{ display: display ? 'block' : 'none' }}
+          style={{ opacity: display ? 1 : 0.1 }}
         >
           {content.map((item, idx) => (
             <>

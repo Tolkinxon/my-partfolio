@@ -42,7 +42,6 @@
   transition: all 0.5s ease;
 }
 
-
 .selecting > p:hover {
   background-color: #112240;
   color: #64ffda;
@@ -50,6 +49,7 @@
 
 .selecting_about {
   width: 80%;
+ transition: all 1s ease;
 }
 
 .selecting_about > h2 {
