@@ -118,7 +118,7 @@ const Experience = () => {
         <div className={style.selecting_about}>
         {content.map((item, idx) => (
           <>
-            {idx === active.id && 
+            {idx === (active.id === null ? 0 : active.id) && 
             <>
                 <h2>{item.companyName}</h2>  
                 <p>{item.date}</p>
