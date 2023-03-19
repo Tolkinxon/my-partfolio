@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+
 import style from '../styles/experience.module.css'
 import { useState, useEffect } from 'react'
 
