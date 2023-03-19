@@ -39,64 +39,7 @@ const Experience = () => {
 
   useEffect(() => {
 
-    setContent([
-      {
-        companyName: 'Mohirdev',
-        date: 'January - june 2017',
-        whatDoing: [
-          `Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-        corporis error at ut ipsam ipsa ad repellendus vero dolore amet
-        exercitationem, dolores commodi deleniti ratione similique
-        sapiente, saepe quod facilis!`,
-          `Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-        corporis error at ut ipsam ipsa ad repellendus vero dolore amet
-        exercitationem, dolores commodi deleniti ratione similique
-        sapiente, saepe quod facilis!`,
-        ],
-      },
-      {
-        companyName: 'Home',
-        date: 'January - june 2021',
-        whatDoing: [
-          `Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-        corporis error at ut ipsam ipsa ad repellendus vero dolore amet
-        exercitationem, dolores commodi deleniti ratione similique
-        sapiente, saepe quod facilis!`,
-          `Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-        corporis error at ut ipsam ipsa ad repellendus vero dolore amet
-        exercitationem, dolores commodi deleniti ratione similique
-        sapiente, saepe quod facilis!`,
-        ],
-      },
-      {
-        companyName: 'It centre',
-        date: 'January - june 2022',
-        whatDoing: [
-          `Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-        corporis error at ut ipsam ipsa ad repellendus vero dolore amet
-        exercitationem, dolores commodi deleniti ratione similique
-        sapiente, saepe quod facilis!`,
-          `Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-        corporis error at ut ipsam ipsa ad repellendus vero dolore amet
-        exercitationem, dolores commodi deleniti ratione similique
-        sapiente, saepe quod facilis!`,
-        ],
-      },
-      {
-        companyName: 'Goods',
-        date: 'January - june 2023',
-        whatDoing: [
-          `Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-        corporis error at ut ipsam ipsa ad repellendus vero dolore amet
-        exercitationem, dolores commodi deleniti ratione similique
-        sapiente, saepe quod facilis!`,
-          `Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-        corporis error at ut ipsam ipsa ad repellendus vero dolore amet
-        exercitationem, dolores commodi deleniti ratione similique
-        sapiente, saepe quod facilis!`,
-        ],
-      },
-    ])
+    
   },[select])
 
 
