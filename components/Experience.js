@@ -7,12 +7,7 @@ const Experience = () => {
   const [active, setActive] = useState({})
   const [select, setSelect] = useState([])
   const [content, setContent] = useState([])
-
-
-
-
-
-
+  const [display, setDisplay] = useState(true)
 
   const Active = (e, id, element) => {
     let h = 0
@@ -27,24 +22,11 @@ const Experience = () => {
         transform: e !== null ? `translateY(${parseInt(h) * id}px)` : null,
         height: h,
       },
-      id: id,
+      id: id
     })
   }
 
-
-
-
-
-
-
-  useEffect(() => {
-
-    
-  },[select])
-
-
-
-
+  useEffect(() => {}, [select])
 
   useEffect(() => {
     setSelect(['Mohirdev', 'Home', 'IT centre', 'goods'])
@@ -112,12 +94,6 @@ const Experience = () => {
     }, 1)
   }, [])
 
-
-
-
-
-
-
   return (
     <div className={style.experience}>
       <h1>
@@ -142,7 +118,7 @@ const Experience = () => {
             </>
           ))}
         </div>
-        <div className={style.selecting_about}>
+        <div className={style.selecting_about} style={{ display: display ?  'block' : 'none'}}>
           {content.map((item, idx) => (
             <>
               {idx === (active.id === null ? 0 : active.id) && (
