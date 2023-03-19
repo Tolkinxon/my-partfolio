@@ -121,7 +121,7 @@ const Experience = () => {
             </>
           ))}
         </div>
-        <div className={style.selecting_about} >
+        <div className={style.selecting_about} style={{opacity: display ? '1' : '0'}}>
           {content.map((item, idx) => (
             <>
               {idx === (active.id === null ? 0 : active.id) && (
