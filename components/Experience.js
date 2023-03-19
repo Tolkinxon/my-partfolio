@@ -121,10 +121,7 @@ const Experience = () => {
             </>
           ))}
         </div>
-        <div
-          className={style.selecting_about}
-          style={{ opacity: display ? 1 : 0.1 }}
-        >
+        <div className={style.selecting_about} >
           {content.map((item, idx) => (
             <>
               {idx === (active.id === null ? 0 : active.id) && (

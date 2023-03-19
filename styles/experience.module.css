@@ -49,6 +49,7 @@
 
 .selecting_about {
   width: 80%;
+  opacity: 0;
  transition: all 1s ease;
 }
 
