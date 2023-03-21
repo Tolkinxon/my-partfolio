@@ -32,6 +32,16 @@
   font-weight: 700;
 }
 
+.content > ul > li {
+  list-style-type: none;
+  display: inline;
+  margin: 10px;
+  color: #8892b0;
+  font-size: 17px;
+  line-height: 1.5;
+  letter-spacing: 0.7px;
+}
+
 .icons {
   display: flex;
   flex-direction: row;
@@ -45,4 +55,5 @@
   height: 20px;
   color: #a8b2d1;
   transition: all 0.5s;
+  margin: 10px;
 }
