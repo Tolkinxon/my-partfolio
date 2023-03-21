@@ -1,6 +1,7 @@
 import React from 'react'
 import style from '../styles/SomeThingIveBuild.module.css'
 import Image from 'next/image'
+import pnng from '../public/image1.png'
 
 const SomeThingIveBuild = () => {
   return (
@@ -9,11 +10,11 @@ const SomeThingIveBuild = () => {
         03. <span>Some Things I've Built</span>
       </h1>
       <Image
-        href={`/my-app/public/image1.png`}
+        href={pnng}
         className={style.picture}
         width={400}
         height={300}
-        
+        alt="there have a background image"
       />
       <div className={style.content}>
         <h2>Featured project</h2>
