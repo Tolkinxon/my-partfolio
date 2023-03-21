@@ -17,6 +17,18 @@ const SomeThingIveBuild = () => {
             <li>
                 next Js
             </li>
+            <li>
+                html
+            </li>
+            <li>
+                css
+            </li>
+            <li>
+                bootstrap
+            </li>
+            <li>
+                java Script
+            </li>
         </ul>
       </div>
     </div>
