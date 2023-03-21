@@ -19,7 +19,7 @@ const Experience = () => {
 
     setTimeout(() => {
       setDisplay(true)
-    }, 100)
+    }, 200)
     setDisplay(false)
 
     setActive({
