@@ -32,6 +32,13 @@
   font-weight: 700;
 }
 
+.content > p {
+  background-color: #112240;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  padding: 25px;
+  color: #a8b2d1;
+}
+
 .content > ul > li {
   list-style-type: none;
   display: inline;
