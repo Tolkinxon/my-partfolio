@@ -1,7 +1,6 @@
 .someThingIveBuild {
   width: 100%;
   margin-top: 200px;
-  border: 2px solid red;
   font-family: sans-serif;
   position: relative;
 }
@@ -12,13 +11,6 @@
   font-weight: 700;
 }
 
-.someThingIveBuild div{
-    position: relative;
-    display: flex;
-    align-items: center;
-
-}
-
 .picture {
   position: relative;
   z-index: 4;
@@ -26,12 +18,19 @@
 }
 
 .content {
+  position: absolute;
+  right: 0px;
+  top: 20px;
   z-index: 7;
   width: 60%;
   text-align: right;
 }
 
-.content h2:nth-child(2) {
+.content h2:nth-child(1) {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #62f9d6;
 }
 .content h2:nth-child(2) {
   color: #ccd6f6;
@@ -49,7 +48,7 @@
 .content > ul > li {
   list-style-type: none;
   display: inline;
-  margin: 10px;
+  margin-left: 10px;
   color: #8892b0;
   font-size: 17px;
   line-height: 1.5;
@@ -64,10 +63,9 @@
 
 .icons > svg {
   display: block;
-  margin-bottom: 28px;
   width: 20px;
   height: 20px;
   color: #a8b2d1;
   transition: all 0.5s;
-  margin: 10px;
+  margin-left: 10px;
 }
