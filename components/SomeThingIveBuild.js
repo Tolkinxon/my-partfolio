@@ -10,10 +10,9 @@ const SomeThingIveBuild = () => {
         03. <span>Some Things I've Built</span>
       </h1>
       <Image
-        href={pnng}
+        src={pnng}
         className={style.picture}
         width={400}
-        height={300}
         alt="there have a background image"
       />
       <div className={style.content}>
