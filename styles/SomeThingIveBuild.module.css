@@ -12,13 +12,20 @@
   font-weight: 700;
 }
 
+.someThingIveBuild div{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
 .picture {
+  position: relative;
   z-index: 4;
   width: 50%;
 }
 
 .content {
-  position: absolute;
   z-index: 7;
   width: 60%;
   text-align: right;
