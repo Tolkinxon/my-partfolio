@@ -5,13 +5,25 @@
   font-family: sans-serif;
 }
 
-.someThingIveBuild h1{
-    color: #ccd6f6;
-    font-size: 32px;
-    font-weight: 700;
+.someThingIveBuild h1 {
+  color: #ccd6f6;
+  font-size: 32px;
+  font-weight: 700;
 }
-.content h2:nth-child(2){
 
+.picture {
+  float: left;
+  z-index: 4;
+  width: 50%;
+}
+
+.content {
+  float: right;
+  z-index: 7;
+  width: 60%;
+}
+
+.content h2:nth-child(2) {
 }
 .content h2:nth-child(2) {
   color: #ccd6f6;
