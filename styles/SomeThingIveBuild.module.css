@@ -21,6 +21,7 @@
   float: right;
   z-index: 7;
   width: 60%;
+  text-align: right;
 }
 
 .content h2:nth-child(2) {
@@ -31,7 +32,7 @@
   font-weight: 700;
 }
 
-.icons > svg {
+.icons > span > svg {
   display: block;
   margin-bottom: 28px;
   width: 20px;
