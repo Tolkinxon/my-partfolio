@@ -30,6 +30,9 @@ const SomeThingIveBuild = () => {
                 java Script
             </li>
         </ul>
+        <div className={style.icons}>
+            
+        </div>
       </div>
     </div>
   )
