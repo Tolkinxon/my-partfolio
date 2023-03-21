@@ -3,3 +3,12 @@
     margin-top: 200px;
     border: 2px solid red;
   }
+
+  .icons > svg {
+    display: block;
+    margin-bottom: 28px;
+    width: 20px;
+    height: 20px;
+    color: #a8b2d1;
+    transition: all 0.5s;
+  }
