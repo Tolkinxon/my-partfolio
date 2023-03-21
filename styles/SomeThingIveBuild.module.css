@@ -27,10 +27,11 @@
 }
 
 .content h2:nth-child(1) {
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #62f9d6;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #62f9d6;
+  margin-bottom: 10px;
 }
 .content h2:nth-child(2) {
   color: #ccd6f6;
