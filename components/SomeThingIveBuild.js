@@ -7,7 +7,7 @@ const SomeThingIveBuild = () => {
       <h1>
         03. <span>Some Things I've Built</span>
       </h1>
-      <div className={style.picture}></div>
+      <Image  className={style.picture}/>
       <div className={style.content}>
         <h2>Featured project</h2>
         <h2>Spotlify profile</h2>

@@ -4,6 +4,12 @@
   border: 2px solid red;
   font-family: sans-serif;
 }
+
+.someThingIveBuild h1{
+    color: #ccd6f6;
+    font-size: 32px;
+    font-weight: 700;
+}
 .content h2:nth-child(2){
 
 }
