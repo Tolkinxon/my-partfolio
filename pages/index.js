@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Icons from '@/components/Icons'
 import Header from '../components/Header'
 import About from '../components/About'
+import SomeThingIveBuild from '@/components/SomeThingIveBuild'
 import { useRef, useState } from 'react'
 import Experience from '@/components/Experience'
 
@@ -39,6 +40,7 @@ export default function Home() {
           <Header />
           <About />
           <Experience />
+          <SomeThingIveBuild />
         </div>
       </div>
     </>
