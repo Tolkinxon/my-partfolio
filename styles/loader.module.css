@@ -26,11 +26,11 @@
   justify-content: space-between;
 }
 
-/* .box > span {
-  width:  100%;
-  height: 1px;
+.box > span {
+  width:  1px;
+  height: 100%;
   border: 1px solid red;
-} */
+}
 
 .box:nth-child(1) {
   transform: rotate(60deg);
