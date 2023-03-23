@@ -9,6 +9,9 @@ import { useRef, useState } from 'react'
 import Experience from '@/components/Experience'
 
 export default function Home() {
+
+
+  const [hide, setHide] = useState(true)
   const variable = useRef(null)
   const variable2 = useRef(null)
   const [hideNavbar, setHideNavbar] = useState('')
@@ -34,6 +37,7 @@ export default function Home() {
         <title>my portfolio</title>
         <meta name="Tolkinxon" content="about tesla company" />
       </Head>
+      <Loader />
       <div className="container" onScroll={(e) => logging(e)}>
         <Navbar scroll={hideNavbar} />
         <Icons />
@@ -42,7 +46,6 @@ export default function Home() {
           <About />
           <Experience />
           <SomeThingIveBuild />
-          <Loader />
         </div>
       </div>
     </>
