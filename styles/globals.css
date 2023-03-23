@@ -89,6 +89,8 @@
 /*                                    /\            */
 /****************** ICON'S CSS CODES  ||  ***********/
 
+
+
 /*********** SCROLL STYLES ************/
 
 ::-webkit-scrollbar {
@@ -142,9 +144,17 @@
 }
 /****** SELECTING COMPANY STYLES EXPERIENCE SIDE  ***********/
 
+
+
 /****** ACTIVE STYLES EXPERIENCE SIDE  ***********/
 .active {
   background-color: #112240;
   color: #64ffda;
 }
 /****** ACTIVE STYLES EXPERIENCE SIDE  ***********/
+
+
+/************ LOADER COMPONENTS **********/
+/* #020C1B */
+
+/************ LOADER COMPONENTS **********/
