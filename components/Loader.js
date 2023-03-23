@@ -8,9 +8,7 @@ const Loader = () => {
         <div className={style.box}></div>
         <div className={style.box}></div>
         <div className={style.box}></div>
-        <div className={style.box}>S</div>
       </div>
-
     </div>
   )
 }
