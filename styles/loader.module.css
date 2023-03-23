@@ -18,14 +18,33 @@
 
 .box {
   position: absolute;
-  border: 2px solid blue;
-  width: 100px;
-  height: 200px;
+  width:  105px;
+  height: 60px;
+  border-left: 1px solid #62f9d6;
+  border-right: 1px solid #62f9d6;
+  display: flex;
+  justify-content: space-between;
 }
+
+/* .box > span {
+  width:  100%;
+  height: 1px;
+  border: 1px solid red;
+} */
 
 .box:nth-child(1) {
   transform: rotate(60deg);
+  /* animation-name: line;
+  animation-duration: 1s; */
 }
 .box:nth-child(2) {
   transform: rotate(120deg);
 }
+
+
+/* @keyframes line {
+  from {
+  }
+  to {
+  }
+} */

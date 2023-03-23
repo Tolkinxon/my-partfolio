@@ -5,9 +5,9 @@ const Loader = () => {
   return (
     <div className={style.loader}>
       <div className={style.box_container}>
-        <div className={style.box}></div>
-        <div className={style.box}></div>
-        <div className={style.box}></div>
+        <div className={style.box}> <span></span><span></span> </div>
+        <div className={style.box}> <span></span><span></span>  </div>
+        <div className={style.box}> <span></span><span></span>  </div>
       </div>
     </div>
   )
