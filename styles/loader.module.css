@@ -88,6 +88,31 @@
   animation-fill-mode: both;
 }
 
+.box:nth-child(4) {
+  transform: rotate(60deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #62f9d6;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  opacity: 0;
+  animation-name: letter;
+  animation-delay: 6s;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes letter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes line {
   from {
     transform: translateY(0px);
