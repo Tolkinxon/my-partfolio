@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import About from '../components/About'
 import Loader from '../components/Loader'
 import SomeThingIveBuild from '@/components/SomeThingIveBuild'
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import Experience from '@/components/Experience'
 
 export default function Home() {
@@ -30,6 +30,12 @@ export default function Home() {
       setHideNavbar('15px')
     }
   }
+
+  useEffect(() => {
+    
+  },[])
+
+
 
   return (
     <>
