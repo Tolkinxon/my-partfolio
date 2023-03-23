@@ -45,8 +45,7 @@ export default function Home() {
         <title>my portfolio</title>
         <meta name="Tolkinxon" content="about tesla company" />
       </Head>
-      {loader ? <Loader /> : 
-       
+      {loader ? <Loader /> :  
       <div className="container" onScroll={(e) => logging(e)}>
         <Navbar scroll={hideNavbar} />
         <Icons />
