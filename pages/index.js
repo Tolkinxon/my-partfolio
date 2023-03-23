@@ -42,6 +42,7 @@ export default function Home() {
           <About />
           <Experience />
           <SomeThingIveBuild />
+          <Loader />
         </div>
       </div>
     </>
