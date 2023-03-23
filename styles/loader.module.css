@@ -18,33 +18,51 @@
 
 .box {
   position: absolute;
-  width:  105px;
+  width: 105px;
   height: 60px;
   border-left: 1px solid #62f9d6;
   border-right: 1px solid #62f9d6;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .box > span {
-  width:  1px;
+  width: 1px;
   height: 100%;
   border: 1px solid red;
+  position: absolute;
+  transition: all 1s;
+}
+.box > span:nth-child(1) {
+  top: -100%;
+  left: 0px;
+}
+
+.box > span:nth-child(2) {
+  top: 100px;
+  right: 0px;
 }
 
 .box:nth-child(1) {
   transform: rotate(60deg);
-  /* animation-name: line;
-  animation-duration: 1s; */
+}
+.box:nth-child(1) > span:nth-child(1) {
+  animation-name: line;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 .box:nth-child(2) {
   transform: rotate(120deg);
 }
 
-
-/* @keyframes line {
+@keyframes line {
   from {
+    transform: translateY(0px);
+    transition: all 1s;
   }
   to {
+    transform: translateY(60px);
+    transition: all 1s;
   }
-} */
+}
