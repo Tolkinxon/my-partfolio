@@ -29,7 +29,7 @@
   border-radius: 10px;
   width: 1px;
   height: 100%;
-  border: 2px solid #62f9d6;
+  border: 3px solid #62f9d6;
   position: absolute;
 }
 .box > div:nth-child(1) {
@@ -43,7 +43,6 @@
   right: 0px;
   animation-timing-function: linear;
 }
-
 
 .box:nth-child(2) {
   transform: rotate(120deg);
@@ -59,8 +58,6 @@
   animation-delay: 0.6s;
   animation-fill-mode: both;
 }
-
-
 
 .box:nth-child(1) {
   transform: rotate(60deg);
@@ -78,11 +75,6 @@
   animation-fill-mode: both;
 }
 
-
-
-
-
-
 .box:nth-child(3) > div:nth-child(1) {
   animation-name: line;
   animation-duration: 0.2s;
@@ -96,8 +88,6 @@
   animation-fill-mode: both;
 }
 
-
-
 .box:nth-child(4) {
   transform: rotate(60deg);
   display: flex;
@@ -109,7 +99,7 @@
   font-family: sans-serif;
   opacity: 0;
   animation-name: letter;
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
   animation-duration: 0.5s;
   animation-fill-mode: both;
 }
