@@ -39,7 +39,7 @@
 .content {
   position: absolute;
   right: 0px;
-  top: 20px;
+  top: 50px;
   z-index: 7;
   width: 60%;
   text-align: right;
@@ -98,7 +98,7 @@
   margin-left: 10px;
 }
 
-.icons > svg:hover{
+.icons > svg:hover {
   color: #62f9d6;
   cursor: pointer;
 }
