@@ -9,12 +9,15 @@
   color: #ccd6f6;
   font-size: 32px;
   font-weight: 700;
+  display: flex;
+  align-items: center;
 }
-.someThingIveBuild > h1 > span:nth-child(2){
+.someThingIveBuild > h1 > span:nth-child(2) {
   display: inline-block;
-  width: 50%;
+  width: 30%;
   height: 1px;
-  border: 2px solid red;
+  border: 1px solid #233554;
+  margin-left: 30px;
 }
 
 .picture {
