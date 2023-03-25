@@ -7,7 +7,7 @@ const SomeThingIveBuild = () => {
   return (
     <div className={style.someThingIveBuild}>
       <h1>
-        03. <span>Some Things I've Built</span>
+        03. <span>Some Things I've Built</span> <span></span>
       </h1>
       <Image
         src={pnng}

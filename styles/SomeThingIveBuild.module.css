@@ -10,6 +10,12 @@
   font-size: 32px;
   font-weight: 700;
 }
+.someThingIveBuild > h1 > span:nth-child(2){
+  display: inline-block;
+  width: 50%;
+  height: 1px;
+  border: 2px solid red;
+}
 
 .picture {
   position: relative;
