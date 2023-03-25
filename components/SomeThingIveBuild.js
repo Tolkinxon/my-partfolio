@@ -66,10 +66,7 @@ const SomeThingIveBuild = () => {
       </div>
 
 
-    <div>
-      
-    </div>
-
+ 
       
     </div>
   )
