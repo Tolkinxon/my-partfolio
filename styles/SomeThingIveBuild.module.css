@@ -11,6 +11,7 @@
   font-weight: 700;
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
 }
 .someThingIveBuild > h1 > span:nth-child(2) {
   display: inline-block;
