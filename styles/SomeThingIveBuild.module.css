@@ -100,4 +100,5 @@
 
 .icons > svg:hover{
   color: #62f9d6;
+  cursor: pointer;
 }
