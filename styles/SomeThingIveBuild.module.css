@@ -6,19 +6,21 @@
 }
 
 .someThingIveBuild h1 {
- 
- 
-}
-
-.someThingIveBuild > h1 > span:nth-child(1){
-  color: #ccd6f6;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #64ffda;
+  margin-right: 5px;
   display: flex;
   align-items: center;
   margin-bottom: 40px;
 }
 
+.someThingIveBuild > h1 > span:nth-child(1) {
+  margin-left: 10px;
+  color: #ccd6f6;
+  font-size: 32px;
+  font-weight: 700;
+}
 
 .someThingIveBuild > h1 > span:nth-child(2) {
   display: inline-block;
