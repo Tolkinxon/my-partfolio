@@ -1,7 +1,6 @@
 .OtherProjects {
   width: 100%;
   margin-top: 200px;
-  border: 2px solid red;
 }
 
 
@@ -9,6 +8,7 @@
 .item{
     background-color: #112240;
     width: 30%;
+    height: 300px;
     border-radius: 5px;
 }
 
