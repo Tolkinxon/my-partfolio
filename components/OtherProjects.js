@@ -1,8 +1,9 @@
 import React from 'react'
+import style from '../styles/OtherProjects.module.css'
 
 const OtherProjects = () => {
   return (
-    <div></div>
+    <div className={style.OtherProjects}></div>
   )
 }
 
