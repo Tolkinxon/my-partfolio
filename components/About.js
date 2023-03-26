@@ -35,6 +35,14 @@ const About = () => {
           variety of clients.
         </p>
         <br />
+        <p>
+          Fast-forward to today, and Ive had the privilege of working at an
+          advertising agency, a start-up, a huge corporation, and a student-led
+          design studio. My main focus these days is building accessible,
+          inclusive products and digital experiences at Upstatement for a
+          variety of clients.
+        </p>
+        <br />
 
         <p>
           I also recently launched a course that covers everything you need to

@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className={style.header}>
       <p className={style.p}>Hi, my name is </p>
-      <h1 className={style.h1}>Soliyev Tolkinkhon.</h1>
+      <h1 className={style.h1}>O'rolov Abdulvoris.</h1>
       <h2 className={style.h2}>I build things for the web.</h2>
       <p className={style.biography}>
         I am frontend developer and learner backend side web programming. 
