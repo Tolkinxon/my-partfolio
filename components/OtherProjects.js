@@ -3,7 +3,10 @@ import style from '../styles/OtherProjects.module.css'
 
 const OtherProjects = () => {
   return (
-    <div className={style.OtherProjects}></div>
+    <div className={style.OtherProjects}>
+
+        
+    </div>
   )
 }
 
