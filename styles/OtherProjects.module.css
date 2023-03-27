@@ -2,6 +2,7 @@
   width: 100%;
   margin-top: 200px;
   font-family: sans-serif;
+  text-align: center;
 }
 
 .OtherProjects > h1 {
@@ -16,13 +17,12 @@
   font-size: 1rem;
   font-weight: 500;
   color: #64ffda;
-  
 }
 
 .OtherProjects > span > span {
   display: inline-block;
   width: 10px;
-  border: 2px solid #64ffda;
+  border: 1px solid #64ffda;
 }
 
 .item {
