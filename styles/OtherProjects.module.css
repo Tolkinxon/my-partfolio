@@ -11,19 +11,18 @@
   text-align: center;
 }
 
-.OtherProjects > p {
+.OtherProjects > span {
   margin-top: 10px;
   font-size: 1rem;
   font-weight: 500;
   color: #64ffda;
-  text-align: center;
+  
 }
 
-.OtherProjects > span{
+.OtherProjects > span > span {
   display: inline-block;
   width: 10px;
   border: 2px solid #64ffda;
-  
 }
 
 .item {

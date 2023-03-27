@@ -5,7 +5,7 @@ const OtherProjects = () => {
   return (
     <div className={style.OtherProjects}>
       <h1>Other Noteworthy Projects</h1>
-      <span></span><p>view the archive</p>
+      <span><span></span>view the archive</span>
       <div className={style.item}>
         <div className={style.folder}></div>
         <h1>Single application project</h1>
