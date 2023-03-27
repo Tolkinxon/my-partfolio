@@ -14,16 +14,23 @@
 }
 
 .OtherProjects > span {
+  position: relative;
   font-size: 1rem;
   font-weight: 500;
   color: #64ffda;
   text-align: center;
 }
 
+.OtherProjects > span:hover > span {
+  width: 40px;
+}
+
 .OtherProjects > span > span {
   display: inline-block;
   width: 10px;
   border: 1px solid #64ffda;
+  position: absolute;
+  bottom: 0px;
 }
 
 .item {
