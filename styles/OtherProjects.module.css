@@ -20,10 +20,12 @@
   color: #64ffda;
   text-align: center;
   cursor: pointer;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }
 
 .OtherProjects > span:hover > span {
-  width: 120px;
+  width: 133px;
 }
 
 .OtherProjects > span > span {
