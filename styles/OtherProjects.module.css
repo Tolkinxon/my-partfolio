@@ -32,7 +32,7 @@
   position: absolute;
   bottom: 0px;
   transition: 0.5s;
-  border: 1px solid #64ffda;
+  border-bottom: 0.1px solid #64ffda;
 }
 
 .item {
