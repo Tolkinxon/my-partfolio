@@ -37,6 +37,10 @@
   border-bottom: 0.1px solid #64ffda;
 }
 
+.OtherProjects > div {
+  display: flex;
+}
+
 .item {
   margin-top: 20px;
   background-color: #112240;
