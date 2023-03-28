@@ -25,16 +25,21 @@ const OtherProjects = () => {
       </span>
 
       <div>
-        <div className={style.item}>
-          <div className={style.folder}></div>
-          <h1>{}</h1>
-          <p>
-            {}
-          </p>
-          <ul className={style.technologies}>
+        {data.map(item => (
+          <>
+            <div className={style.item}>
+              <div className={style.folder}></div>
+              <h1>{}</h1>
+              <p>
+                {}
+              </p>
+              <ul className={style.technologies}>
 
-          </ul>
-        </div>
+              </ul>
+            </div>
+          </>
+        ))}
+   
       </div>
     </div>
   )
