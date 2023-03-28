@@ -48,9 +48,18 @@
   width: 30%;
   height: 300px;
   border-radius: 5px;
+  padding: 20px;
+}
+.folder {
+  display: flex;
+  justify-content: space-between;
 }
 
 .folder > svg {
   width: 30px;
   color: #64ffda;
+}
+
+.folder > svg:nth-child(2) {
+  width: 20px;
 }
