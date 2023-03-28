@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import style from '../styles/OtherProjects.module.css'
+import { useState, useEffect } from 'react'
 
 const OtherProjects = () => {
+
+  const [data, setData] = useState({})
+
+  useEffect(() => {},[])
+
   return (
     <div className={style.OtherProjects}>
       <h1>Other Noteworthy Projects</h1>
