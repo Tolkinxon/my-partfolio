@@ -4,17 +4,19 @@ import { useState } from 'react'
 
 
 const OtherProjects = () => {
-  const [data, setData] = useState({})
+  const [data, setData] = useState([])
 
   useEffect(() => {
-    setData({
+    setData([
+      {
       nameProject: 'Single application project',
       descriptionProject: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
       eligendi qui a iste maiores sapiente natus saepe ut? Illum unde,
       delectus sit beatae velit incidunt modi illo eum excepturi
       accusamus!'`,
       usingTechnoligies: ['css', 'bootstrap']
-    })
+      }
+    ])
   },[])
 
   return (
