@@ -49,3 +49,8 @@
   height: 300px;
   border-radius: 5px;
 }
+
+.folder > svg {
+  width: 30px;
+  color: #64ffda;
+}
