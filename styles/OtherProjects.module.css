@@ -65,5 +65,14 @@
 }
 
 .item > h1 {
-  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ccd6f6;
+}
+
+.item > p {
+  text-align: left;
+  color: #ccd6f6;
+
 }
