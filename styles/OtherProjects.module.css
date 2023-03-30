@@ -63,3 +63,7 @@
 .folder > svg:nth-child(2) {
   width: 20px;
 }
+
+.item > h1 {
+  font-size: 30px;
+}
