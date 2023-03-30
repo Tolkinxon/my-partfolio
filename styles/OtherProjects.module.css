@@ -49,6 +49,7 @@
   height: 300px;
   border-radius: 5px;
   padding: 20px;
+  position: relative;
 }
 .folder {
   display: flex;
@@ -78,8 +79,13 @@
 
 .item ul {
   display: flex;
+  position: absolute;
+  bottom: 20px;
 }
 
 .item li {
   list-style-type: none;
+  margin-right: 10px;
+  color: #919dbb;
+  font-size: 13px;
 }
