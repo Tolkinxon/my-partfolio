@@ -73,6 +73,13 @@
 
 .item > p {
   text-align: left;
-  color: #ccd6f6;
+  color: #919dbb;
+}
 
+.item ul {
+  display: flex;
+}
+
+.item li {
+  list-style-type: none;
 }
