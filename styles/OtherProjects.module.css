@@ -2,7 +2,9 @@
   width: 100%;
   margin-top: 300px;
   font-family: sans-serif;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .OtherProjects > h1 {

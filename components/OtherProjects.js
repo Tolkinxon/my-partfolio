@@ -112,8 +112,8 @@ const OtherProjects = () => {
             </div>
           </>
         ))}
-        <button>see more</button>
       </div>
+      <button>see more</button>
     </div>
   )
 }
