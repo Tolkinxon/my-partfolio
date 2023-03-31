@@ -113,7 +113,7 @@ const OtherProjects = () => {
           </>
         ))}
       </div>
-      <button className="button">see more</button>
+      <button className={`button ${style.btn}`}>see more</button>
     </div>
   )
 }
