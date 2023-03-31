@@ -3,7 +3,9 @@ import style from '../styles/whatNext.module.css'
 
 const whatNext = () => {
   return (
-    <div>whatNext</div>
+    <div className={style.whatNext}>
+        <div className={style.container}></div>
+    </div>
   )
 }
 
