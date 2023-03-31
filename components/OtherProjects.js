@@ -54,7 +54,7 @@ const OtherProjects = () => {
       delectus sit beatae velit incidunt modi illo eum excepturi
       accusamus!'`,
         usingTechnoligies: ['css', 'bootstrap'],
-      }
+      },
     ])
   }, [])
 
@@ -113,7 +113,7 @@ const OtherProjects = () => {
           </>
         ))}
       </div>
-      <button>see more</button>
+      <button className="button">see more</button>
     </div>
   )
 }
