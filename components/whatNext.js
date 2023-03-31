@@ -1,4 +1,5 @@
 import React from 'react'
+import style from '../styles/whatNext.module.css'
 
 const whatNext = () => {
   return (
