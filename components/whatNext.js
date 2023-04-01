@@ -13,7 +13,7 @@ const WhatNext = () => {
           illo facilis maxime aut corporis quos ullam deleniti aperiam animi
           officiis amet.
         </p>
-        <button>Say Hello</button>
+        <button className={`button ${style.btn}`}>Say Hello</button>
       </div>
     </div>
   )
