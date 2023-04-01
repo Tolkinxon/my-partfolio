@@ -6,6 +6,7 @@ import About from '../components/About'
 import Loader from '../components/Loader'
 import SomeThingIveBuild from '@/components/SomeThingIveBuild'
 import OtherProjects from '@/components/OtherProjects'
+import whatNext from '@/components/whatNext'
 import { useRef, useState, useEffect } from 'react'
 import Experience from '@/components/Experience'
 
@@ -54,6 +55,7 @@ export default function Home() {
             <Experience />
             <SomeThingIveBuild />
             <OtherProjects />
+            <whatNext />
           </div>
         </div>
       )}
