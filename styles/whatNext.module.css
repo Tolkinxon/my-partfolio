@@ -1,4 +1,10 @@
-.whatNext{
-    border: 2px solid red;
-    width: 100%;
+.whatNext {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 60%;
+  text-align: center;
 }
