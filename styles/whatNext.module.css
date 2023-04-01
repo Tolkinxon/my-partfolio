@@ -15,4 +15,11 @@
   font-weight: 500;
   letter-spacing: 1px;
   padding: 12px;
+  color: #62f9d6;
+}
+
+.container h2 {
+  color: #ccd6f6;
+  font-size: 40px;
+  font-weight: 700;
 }
