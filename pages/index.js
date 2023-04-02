@@ -57,6 +57,7 @@ export default function Home() {
             <SomeThingIveBuild />
             <OtherProjects />
             <WhatNext />
+            <DesignedBy />
           </div>
         </div>
       )}
