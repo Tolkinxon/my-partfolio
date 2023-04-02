@@ -1,5 +1,4 @@
-.svg {
-    width: 10px;
-    display: inline-block;
-    border: 2px solid red;
+.svg svg {
+  color: white;
+  width: 20px;
 }
