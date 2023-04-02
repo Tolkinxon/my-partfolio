@@ -4,7 +4,7 @@ import style from '../styles/DesignedBy.module.css'
 const DesignedBy = () => {
   return (
     <div className={style.contianer}>
-      <h1>Designed by</h1>
+      <h1>Designed & Built by Soliyev Tolkinxon</h1>
     </div>
   )
 }
