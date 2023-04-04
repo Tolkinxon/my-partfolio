@@ -94,7 +94,7 @@ const Experience = () => {
     setTimeout(() => {
       const element = document.getElementById('hello')
       Active(null, null, element)
-    }, 1)
+    }, 100)
   }, [])
 
   return (
