@@ -28,6 +28,13 @@ const Navbar = ({ scroll }) => {
         </a>
         <button className="button">Resume</button>
       </div>
+
+
+      <div className={styles.all-menu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </nav>
   )
 }
