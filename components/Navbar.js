@@ -2,8 +2,6 @@ import React from 'react'
 import styles from '../styles/navbar.module.css'
 
 const Navbar = ({ scroll }) => {
-
-
   return (
     <nav className={styles.navbar} style={{ top: scroll }}>
       <div className={styles.box_container}>
@@ -29,8 +27,7 @@ const Navbar = ({ scroll }) => {
         <button className="button">Resume</button>
       </div>
 
-
-      <div className={styles.all-menu}>
+      <div className={styles.hide_selects}>
         <div></div>
         <div></div>
         <div></div>
