@@ -89,16 +89,19 @@
 
 .hide_selects > div:nth-child(1) {
   width: 50px;
+  height: 10px;
   border-top: 2px solid #62f9d6;
 }
 
 .hide_selects > div:nth-child(2) {
   width: 40px;
+  height: 10px;
   border-top: 2px solid #62f9d6;
 }
 
 .hide_selects > div:nth-child(3) {
   width: 30px;
+  height: 10px;
   border-top: 2px solid #62f9d6;
 }
 
@@ -117,8 +120,10 @@
   }
 
   .hide_selects {
-    display: block;
-    text-align: left;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   }
 }
 
