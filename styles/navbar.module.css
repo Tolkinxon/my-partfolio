@@ -65,6 +65,13 @@
 
 .hide_selects {
   display: none;
+
+
+}
+
+.hide_selects > div:nth-child(1){
+  width: 50px;
+  border-top: 2px solid #62f9d6;
 }
 
 .selects > a {
@@ -96,6 +103,10 @@
 @media only screen and (max-width: 770px) {
   .selects {
     display: none;
+  }
+
+  .hide_selects {
+    display: block;
   }
 }
 
