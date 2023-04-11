@@ -116,13 +116,22 @@
 /* MEDIA QUERIES SIDE */
 @media only screen and (max-width: 770px) {
   .selects_wrapper {
-    position: relative;
+    position: absolute;
+    top: 0px;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: left;
+    border: 2px solid red;
   }
-  
+  .selects {
+    right: 0;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: #112240;
+    justify-content: space-evenly;
+  }
 
   /* .hide_selects {
     display: flex;
@@ -131,9 +140,6 @@
     position: absolute;
     right: 20px;
   } */
-
-
-
 }
 
 /* MEDIA QUERIES SIDE */
