@@ -54,7 +54,13 @@
   transform: rotate(120deg);
 }
 /********* SIX CORNER ********/
-
+.selects_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 .selects {
   position: absolute;
   right: 50px;
