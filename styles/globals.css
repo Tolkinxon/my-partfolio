@@ -8,7 +8,7 @@
   height: 100vh;
   width: 100vw;
   background-color: #0a192f;
-  overflow: scroll;
+  overflow: hidden;
   height: 4500px;
   position: relative;
 }
@@ -16,11 +16,12 @@
 /**************  ALL CONTENTS PART ******/
 .content {
   margin: 0px auto;
-  height: 5200px;
+  /* height: 5200px; */
   width: calc(100vw - 370px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px solid red;
 }
 
 /**************  ALL CONTENTS PART ******/
