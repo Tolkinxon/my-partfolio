@@ -47,8 +47,9 @@ export default function Home() {
       {loader ? (
         <Loader />
       ) : (
-        <div className="container" onScroll={(e) => logging(e)}>
+        <>
           <Navbar scroll={hideNavbar} />
+          <div className="container" onScroll={(e) => logging(e)}>
           <Icons />
           <div className="content">
             <Header />
@@ -59,7 +60,8 @@ export default function Home() {
             <WhatNext />
             <DesignedBy />
           </div>
-        </div>
+        </div></>
+      
       )}
     </>
   )
