@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styles from '../styles/navbar.module.css'
 
 const Navbar = ({ scroll }) => {
+  const [clicking, setClicking] = useState({})
+
 
 
   const hideAndShow = () => {
