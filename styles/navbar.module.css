@@ -90,7 +90,7 @@
 
 /*  HIDING SELECTS SIDE */
 .hide_selects {
-  display: none;
+  display: block;
 }
 
 .hide_selects > div:nth-child(1) {
@@ -124,6 +124,7 @@
   .selects_wrapper {
     position: absolute;
     top: 0px;
+    right: -50vw;
     width: 100vw;
     height: 100vh;
     display: flex;

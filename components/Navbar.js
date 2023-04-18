@@ -28,7 +28,6 @@ const Navbar = ({ scroll }) => {
         </div>
   </div>
      
-
       <div className={styles.hide_selects}>
         <div></div>
         <div></div>
