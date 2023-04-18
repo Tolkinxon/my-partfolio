@@ -2,12 +2,10 @@ import React, { useState } from 'react'
 import styles from '../styles/navbar.module.css'
 
 const Navbar = ({ scroll }) => {
-  const [clicking, setClicking] = useState({})
+  const [clicking, setClicking] = useState(true)
 
   const hideAndShow = () => {
-    setClicking({
-      transform: 'translateX(-450px)',
-    })
+    setClicking(!clicking)
   }
 
   console.log(clicking)
@@ -20,7 +18,8 @@ const Navbar = ({ scroll }) => {
         <div className={styles.box}>S</div>
       </div>
 
-      <div className={styles.selects_wrapper} style={clicking}>
+      <div className={styles.selects_wrapper} style={clicking ? {transform: 'translateX(-450px)'} : 
+                                                                {transform: 'translateX(0px)'}}>
         <div className={styles.selects}>
           <a href="#">
             <span>01. </span> About

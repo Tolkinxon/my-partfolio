@@ -131,6 +131,7 @@
     height: 100vh;
     display: flex;
     align-items: left;
+    transition: 1s ease all;
   }
 
   .selects {
