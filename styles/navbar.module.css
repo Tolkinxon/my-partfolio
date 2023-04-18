@@ -90,7 +90,7 @@
 
 /*  HIDING SELECTS SIDE */
 .hide_selects {
-  display: block;
+  display: none;
   position: absolute;
   right: 10px;
 }
@@ -142,13 +142,13 @@
     justify-content: space-evenly;
   }
 
-  /* .hide_selects {
+  .hide_selects {
     display: flex;
     flex-direction: column;
     align-items: end;
     position: absolute;
     right: 20px;
-  } */
+  }
 }
 
 /* MEDIA QUERIES SIDE */

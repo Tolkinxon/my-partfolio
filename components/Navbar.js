@@ -1,16 +1,15 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import styles from '../styles/navbar.module.css'
 
 const Navbar = ({ scroll }) => {
   const [clicking, setClicking] = useState({})
 
-
-
   const hideAndShow = () => {
-    
+    setClicking({
+      transform: 'translateX(-200px)',
+    })
   }
-   return (
-    
+  return (
     <nav className={styles.navbar} style={{ top: scroll }}>
       <div className={styles.box_container}>
         <div className={styles.box}></div>
@@ -18,8 +17,8 @@ const Navbar = ({ scroll }) => {
         <div className={styles.box}></div>
         <div className={styles.box}>S</div>
       </div>
-  <div className={styles.selects_wrapper}>
-      <div className={styles.selects}>
+      <div className={styles.selects_wrapper}>
+        <div className={styles.selects}>
           <a href="#">
             <span>01. </span> About
           </a>
@@ -34,14 +33,13 @@ const Navbar = ({ scroll }) => {
           </a>
           <button className="button">Resume</button>
         </div>
-  </div>
-     
+      </div>
+
       <div className={styles.hide_selects}>
         <div></div>
         <div></div>
         <div></div>
       </div>
-
     </nav>
   )
 }
