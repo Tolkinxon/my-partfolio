@@ -6,9 +6,11 @@ const Navbar = ({ scroll }) => {
 
   const hideAndShow = () => {
     setClicking({
-      transform: 'translateX(-200px)',
+      transform: 'translateX(-450px)',
     })
   }
+
+  console.log(clicking)
   return (
     <nav className={styles.navbar} style={{ top: scroll }}>
       <div className={styles.box_container}>
@@ -17,7 +19,8 @@ const Navbar = ({ scroll }) => {
         <div className={styles.box}></div>
         <div className={styles.box}>S</div>
       </div>
-      <div className={styles.selects_wrapper}>
+
+      <div className={styles.selects_wrapper} style={clicking}>
         <div className={styles.selects}>
           <a href="#">
             <span>01. </span> About
@@ -35,7 +38,7 @@ const Navbar = ({ scroll }) => {
         </div>
       </div>
 
-      <div className={styles.hide_selects}>
+      <div className={styles.hide_selects} onClick={hideAndShow}>
         <div></div>
         <div></div>
         <div></div>
