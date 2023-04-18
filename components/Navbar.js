@@ -2,7 +2,13 @@ import React from 'react'
 import styles from '../styles/navbar.module.css'
 
 const Navbar = ({ scroll }) => {
-  return (
+
+
+  const hideAndShow = () => {
+    
+  }
+   return (
+    
     <nav className={styles.navbar} style={{ top: scroll }}>
       <div className={styles.box_container}>
         <div className={styles.box}></div>
