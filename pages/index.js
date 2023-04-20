@@ -16,10 +16,10 @@ export default function Home() {
   const variable = useRef(null)
   const variable2 = useRef(null)
   const [hideNavbar, setHideNavbar] = useState('')
-  const [filter, setFilter] = useState({})
+  const [filter, setFilter] = useState(false)
 
-  const changeFilter = () => {
-
+  const changeFilter = (bool) => {
+    setFilter(bool)
   }
 
   const logging = (e) => {
