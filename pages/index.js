@@ -6,7 +6,7 @@ import About from '../components/About'
 import Loader from '../components/Loader'
 import SomeThingIveBuild from '@/components/SomeThingIveBuild'
 import OtherProjects from '@/components/OtherProjects'
-import WhatNext from '@/components/WhatNext'
+import WhatNext from '../components/whatNext'
 import DesignedBy from '@/components/DesignedBy'
 import { useRef, useState, useEffect } from 'react'
 import Experience from '@/components/Experience'
@@ -16,6 +16,11 @@ export default function Home() {
   const variable = useRef(null)
   const variable2 = useRef(null)
   const [hideNavbar, setHideNavbar] = useState('')
+  const [filter, setFilter] = useState({})
+
+  const changeFilter = () => {
+
+  }
 
   const logging = (e) => {
     variable2.current = variable.current
