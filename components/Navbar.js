@@ -1,15 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../styles/navbar.module.css'
 
 const Navbar = ({ scroll, changeFilter }) => {
   const [clicking, setClicking] = useState(false)
 
-
-  document.addEventListener('DOMContentLoaded', ()=>{
+useEffect(() => {
+  document.addEventListener('DOMContentLoaded', () => {
     const movingWIdth = document.querySelector('.selects_wrapper') 
-    const widthSelectW = getComputedStyle(movingWIdth).width
+    const widthSelectW = document.getComputedStyle(movingWIdth).width
     console.log(widthSelectW);
   })
+}, [])
+ 
 
   const hideAndShow = () => {
     setClicking(!clicking)
