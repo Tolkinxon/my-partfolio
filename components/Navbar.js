@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import styles from '../styles/navbar.module.css'
 
-const Navbar = ({ scroll }) => {
+const Navbar = ({ scroll, changeFilter }) => {
   const [clicking, setClicking] = useState(true)
 
   const hideAndShow = () => {
     setClicking(!clicking)
+    changeFilter(clicking)
   }
 
   console.log(clicking)

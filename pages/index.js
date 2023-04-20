@@ -53,8 +53,9 @@ export default function Home() {
         <Loader />
       ) : (
         <>
-          <Navbar scroll={hideNavbar} />
-          <div className="container" onScroll={(e) => logging(e)}>
+          <Navbar scroll={hideNavbar} changeFilter={changeFilter} />
+          <div className="container" onScroll={(e) => logging(e)} 
+          style={filter && {filter: 'blur(5px) brightness(0.7)', overflow: 'hidden'}}>
           <Icons />
           <div className="content">
             <Header />
