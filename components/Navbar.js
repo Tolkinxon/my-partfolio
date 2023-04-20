@@ -2,7 +2,14 @@ import React, { useState } from 'react'
 import styles from '../styles/navbar.module.css'
 
 const Navbar = ({ scroll, changeFilter }) => {
-  const [clicking, setClicking] = useState(true)
+  const [clicking, setClicking] = useState(false)
+
+
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const movingWIdth = document.querySelector('.selects_wrapper') 
+    const widthSelectW = getComputedStyle(movingWIdth).width
+    console.log(widthSelectW);
+  })
 
   const hideAndShow = () => {
     setClicking(!clicking)
@@ -22,7 +29,7 @@ const Navbar = ({ scroll, changeFilter }) => {
         className={styles.selects_wrapper}
         style={
           clicking
-            ? { transform: 'translateX(-450px)' }
+            ? { transform: 'translateX(-300px)' }
             : { transform: 'translateX(0px)' }
         }
       >
