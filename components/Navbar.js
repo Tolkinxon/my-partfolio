@@ -9,7 +9,6 @@ const Navbar = ({ scroll, changeFilter }) => {
     changeFilter(clicking)
   }
 
-  console.log(clicking)
   return (
     <nav className={styles.navbar} style={{ top: scroll }}>
       <div className={styles.box_container}>
@@ -19,8 +18,14 @@ const Navbar = ({ scroll, changeFilter }) => {
         <div className={styles.box}>S</div>
       </div>
 
-      <div className={styles.selects_wrapper} style={clicking ? {transform: 'translateX(-450px)'} : 
-                                                                {transform: 'translateX(0px)'}}>
+      <div
+        className={styles.selects_wrapper}
+        style={
+          clicking
+            ? { transform: 'translateX(-450px)' }
+            : { transform: 'translateX(0px)' }
+        }
+      >
         <div className={styles.selects}>
           <a href="#">
             <span>01. </span> About

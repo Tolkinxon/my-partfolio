@@ -18,8 +18,8 @@ export default function Home() {
   const [hideNavbar, setHideNavbar] = useState('')
   const [filter, setFilter] = useState(false)
 
-  const changeFilter = (bool) => {
-    setFilter(bool)
+  const changeFilter = (bool = false) => {
+    setFilter(!bool)
   }
 
   const logging = (e) => {
@@ -54,20 +54,33 @@ export default function Home() {
       ) : (
         <>
           <Navbar scroll={hideNavbar} changeFilter={changeFilter} />
-          <div className="container" onScroll={(e) => logging(e)} 
-          style={filter && {filter: 'blur(5px) brightness(0.7)', overflow: 'hidden'}}>
-          <Icons />
-          <div className="content">
-            <Header />
-            <About />
-            <Experience />
-            <SomeThingIveBuild />
-            <OtherProjects />
-            <WhatNext />
-            <DesignedBy />
+          <div
+            className="container"
+            onScroll={(e) => logging(e)}
+            style={
+              filter
+                ? {
+                    filter: 'blur(5px) brightness(0.7)',
+                    overflow: 'hidden',
+                  }
+                : {
+                    filter: 'blur(0px) brightness(1)',
+                    overflow: 'scroll',
+                  }
+            }
+          >
+            <Icons />
+            <div className="content">
+              <Header />
+              <About />
+              <Experience />
+              <SomeThingIveBuild />
+              <OtherProjects />
+              <WhatNext />
+              <DesignedBy />
+            </div>
           </div>
-        </div></>
-      
+        </>
       )}
     </>
   )
