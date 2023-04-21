@@ -22,7 +22,7 @@ const Navbar = ({ scroll, changeFilter }) => {
         className={styles.selects_wrapper}
         style={
           clicking
-            ? { transform: 'translateX(-300px)' }
+            ? { transform: 'translateX(calc(50vw))' }
             : { transform: 'translateX(0px)' }
         }
       >
