@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useref } from 'react'
 import styles from '../styles/navbar.module.css'
 
 const Navbar = ({ scroll, changeFilter }) => {
   const [clicking, setClicking] = useState(false)
+  const elem = useRef(null)
 
   useEffect(() => {
-    console.log(document.querySelector('.navbar_selects_wrapper__A_8BC'))
-    setTimeout(() => {}, 100)
+    elem.current = document.querySelector('.navbar_selects_wrapper__A_8BC').offsetLeft
+   
   }, [])
 
   const hideAndShow = () => {
