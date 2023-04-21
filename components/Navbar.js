@@ -4,6 +4,12 @@ import styles from '../styles/navbar.module.css'
 const Navbar = ({ scroll, changeFilter }) => {
   const [clicking, setClicking] = useState(false)
 
+  useEffect(() => {
+    document.addEventListener('DOMContentLoaded', () => {
+      
+    })
+  }, [])
+
   const hideAndShow = () => {
     setClicking(!clicking)
     changeFilter(clicking)
