@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useref } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import styles from '../styles/navbar.module.css'
 
 const Navbar = ({ scroll, changeFilter }) => {
@@ -6,8 +6,10 @@ const Navbar = ({ scroll, changeFilter }) => {
   const elem = useRef(null)
 
   useEffect(() => {
-    elem.current = document.querySelector('.navbar_selects_wrapper__A_8BC').offsetLeft
-   
+    elem.current = document.querySelector(
+      '.navbar_selects_wrapper__A_8BC',
+    ).offsetLeft
+    console.log(elem.current)
   }, [])
 
   const hideAndShow = () => {
@@ -28,7 +30,7 @@ const Navbar = ({ scroll, changeFilter }) => {
         className={styles.selects_wrapper}
         style={
           clicking
-            ? { transform: 'translateX(-300px)' }
+            ? { transform: `translateX(${elem.current}px)` }
             : { transform: 'translateX(0px)' }
         }
       >
