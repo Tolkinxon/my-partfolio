@@ -5,9 +5,8 @@ const Navbar = ({ scroll, changeFilter }) => {
   const [clicking, setClicking] = useState(false)
 
   useEffect(() => {
-    document.addEventListener('DOMContentLoaded', () => {
-      
-    })
+    console.log(document.querySelector('.navbar_selects_wrapper__A_8BC'))
+    setTimeout(() => {}, 100)
   }, [])
 
   const hideAndShow = () => {
