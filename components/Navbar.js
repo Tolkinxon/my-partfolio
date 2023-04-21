@@ -4,12 +4,12 @@ import styles from '../styles/navbar.module.css'
 const Navbar = ({ scroll, changeFilter }) => {
   const [clicking, setClicking] = useState(false)
   const elem = useRef(null)
+  const [elemWidth, setElemWidth] = useState('')
 
   useEffect(() => {
-    elem.current = document.querySelector(
-      '.navbar_selects_wrapper__A_8BC',
-    ).offsetLeft
-    console.log(elem.current)
+    elem.current = document.querySelector('.navbar_selects_wrapper__A_8BC')
+      setElemWidth(window.getComputedStyle(elem.current).width)
+
   }, [])
 
   const hideAndShow = () => {
@@ -30,7 +30,7 @@ const Navbar = ({ scroll, changeFilter }) => {
         className={styles.selects_wrapper}
         style={
           clicking
-            ? { transform: `translateX(${elem.current}px)` }
+            ? { transform: `translateX(-400px)` }
             : { transform: 'translateX(0px)' }
         }
       >
