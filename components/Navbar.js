@@ -9,7 +9,11 @@ const Navbar = ({ scroll, changeFilter }) => {
   useEffect(() => {
     elem.current = document.querySelector('.navbar_selects__ENLNM')
     elemWidth.current = window.getComputedStyle(elem.current).width
-    console.log(window.innerWidth)
+
+    window.addEventListener('resize', () => {
+      console.log(window.innerWidth)
+
+    })
   }, [])
 
   const hideAndShow = () => {
