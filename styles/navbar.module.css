@@ -126,7 +126,7 @@
   .selects_wrapper {
     position: absolute;
     top: 0px;
-    right: -60vw;
+    right: -50vw;
     width: 100vw;
     height: 100vh;
     display: flex;
