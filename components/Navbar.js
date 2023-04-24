@@ -6,15 +6,18 @@ const Navbar = ({ scroll, changeFilter }) => {
   const [elemWidth, setElemWidth] = useState(0)
   const [otherScrollElems, setOtherScrollElems] = useState({})
 
-  if ((scroll = '15px')) {
-    setOtherScrollElems({
-      backgroundColor: '#0A192F',
-      boxShadow: 'box-shadow: 0 10px 30px -10px #0A192F',
-      backdropFilter: 'blur(0px);'
-    })
-  }
-
-  console.log(scroll)
+  useEffect(() => {
+    if (scroll === '15px') {
+      setOtherScrollElems({
+        backgroundColor: '#0A192F',
+        boxShadow: '0 10px 30px -10px #0A192F',
+        backdropFilter: 'blur(0px);',
+        top: scroll,
+      })
+    } else {
+      setOtherScrollElems({ top: scroll })
+    }
+  }, [scroll])
 
   window.addEventListener('resize', () => {
     setElemWidth(window.innerWidth / 2)
@@ -26,7 +29,7 @@ const Navbar = ({ scroll, changeFilter }) => {
   }
 
   return (
-    <nav className={styles.navbar} style={{ top: scroll }}>
+    <nav className={styles.navbar} style={otherScrollElems}>
       <div className={styles.box_container}>
         <div className={styles.box}></div>
         <div className={styles.box}></div>
