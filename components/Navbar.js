@@ -6,10 +6,10 @@ const Navbar = ({ scroll, changeFilter }) => {
   const [elemWidth, setElemWidth] = useState(0)
 
   window.addEventListener('resize', () => {
-    elemWidth.current = window.innerWidth / 2
+    setElemWidth(window.innerWidth / 2)
   })
 
-
+  console.log(elemWidth)
 
   const hideAndShow = () => {
     setClicking(!clicking)
@@ -29,7 +29,7 @@ const Navbar = ({ scroll, changeFilter }) => {
         className={styles.selects_wrapper}
         style={
           clicking
-            ? { transform: `translateX(-${elemWidth.current}px)` }
+            ? { transform: `translateX(-${elemWidth}px)` }
             : { transform: 'translateX(0px)' }
         }
       >
