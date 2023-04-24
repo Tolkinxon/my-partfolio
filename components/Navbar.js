@@ -8,6 +8,7 @@ const Navbar = ({ scroll, changeFilter }) => {
 
   useEffect(() => {
     elem.current = document.querySelector('.navbar_selects__ENLNM')
+    elem.current.style.width = 'calc(50vw)'
     elemWidth.current = window.getComputedStyle(elem.current).width
     console.log(elemWidth.current)
   }, [])
