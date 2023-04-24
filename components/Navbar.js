@@ -6,15 +6,9 @@ const Navbar = ({ scroll, changeFilter }) => {
   const elem = useRef(null)
   const elemWidth = useRef(null)
 
-  useEffect(() => {
-    elem.current = document.querySelector('.navbar_selects__ENLNM')
-    elemWidth.current = window.getComputedStyle(elem.current).width
-
-    window.addEventListener('resize', () => {
-      console.log(window.innerWidth)
-
-    })
-  }, [])
+  window.addEventListener('resize', () => {
+    console.log(window.innerWidth)
+  })
 
   const hideAndShow = () => {
     setClicking(!clicking)
