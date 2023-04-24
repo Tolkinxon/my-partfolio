@@ -4,12 +4,21 @@ import styles from '../styles/navbar.module.css'
 const Navbar = ({ scroll, changeFilter }) => {
   const [clicking, setClicking] = useState(false)
   const [elemWidth, setElemWidth] = useState(0)
+  const [otherScrollElems, setOtherScrollElems] = useState({})
+
+  if ((scroll = '15px')) {
+    setOtherScrollElems({
+      backgroundColor: '#0A192F',
+      boxShadow: 'box-shadow: 0 10px 30px -10px #0A192F',
+      backdropFilter: 'blur(0px);'
+    })
+  }
+
+  console.log(scroll)
 
   window.addEventListener('resize', () => {
     setElemWidth(window.innerWidth / 2)
   })
-
-  console.log(elemWidth)
 
   const hideAndShow = () => {
     setClicking(!clicking)
