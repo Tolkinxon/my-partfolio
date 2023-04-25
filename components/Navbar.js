@@ -66,11 +66,14 @@ const Navbar = ({ scroll, changeFilter }) => {
         </div>
       </div>
 
-      <div className={styles.hide_selects} onClick={hideAndShow}>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+
+       
+      <input type="checkbox" id="checkbox"  onClick={hideAndShow}/>
+      <label for="checkbox" className="toggle">
+          <div className="bars" id="bar1"></div>
+          <div className="bars" id="bar2"></div>
+          <div className="bars" id="bar3"></div>
+      </label>
     </nav>
   )
 }
