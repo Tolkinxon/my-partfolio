@@ -62,7 +62,10 @@ const Navbar = ({ scroll, changeFilter }) => {
         </div>
       </div>
 
-      <div className={styles.Xsign} onClick={hideAndShow}>
+      <div
+        className={clicking ? styles.Xsign : styles.hide_selects}
+        onClick={hideAndShow}
+      >
         <div></div>
         <div></div>
         <div></div>
