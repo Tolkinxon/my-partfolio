@@ -26,6 +26,8 @@ const Navbar = ({ scroll, changeFilter }) => {
   const hideAndShow = () => {
     setClicking(!clicking)
     changeFilter(clicking)
+
+    
   }
 
   return (

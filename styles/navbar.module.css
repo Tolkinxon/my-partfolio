@@ -92,7 +92,7 @@
 .hide_selects {
   display: none;
   position: absolute;
-  right: 10px;
+  right: 20px;
 }
 
 .hide_selects > div:nth-child(1) {
@@ -112,6 +112,15 @@
   height: 10px;
   border-top: 2px solid #62f9d6;
 }
+
+
+.Xsign{
+  display: none;
+  position: absolute;
+  right: 10px;
+}
+
+
 
 /*  HIDING SELECTS SIDE */
 
@@ -149,6 +158,12 @@
     align-items: end;
     position: absolute;
     right: 20px;
+  }
+
+  .Xsign{
+    display: block;
+    position: absolute;
+    right: 10px;
   }
 }
 
