@@ -6,6 +6,15 @@ const Navbar = ({ scroll, changeFilter }) => {
   const [elemWidth, setElemWidth] = useState(0)
   const [otherScrollElems, setOtherScrollElems] = useState({})
 
+  window.addEventListener('resize', () => {
+    setElemWidth(window.innerWidth / 2)
+  })
+
+  const hideAndShow = () => {
+    setClicking(!clicking)
+    changeFilter(clicking)
+  }
+
   useEffect(() => {
     if (scroll === '15px') {
       setOtherScrollElems({
@@ -19,14 +28,9 @@ const Navbar = ({ scroll, changeFilter }) => {
     }
   }, [scroll])
 
-  window.addEventListener('resize', () => {
+  useEffect(() => {
     setElemWidth(window.innerWidth / 2)
-  })
-
-  const hideAndShow = () => {
-    setClicking(!clicking)
-    changeFilter(clicking)
-  }
+  }, [])
 
   return (
     <nav className={styles.navbar} style={otherScrollElems}>
@@ -62,10 +66,7 @@ const Navbar = ({ scroll, changeFilter }) => {
         </div>
       </div>
 
-      <div
-        className={clicking ? styles.Xsign : styles.hide_selects}
-        onClick={hideAndShow}
-      >
+      <div className={styles.hide_selects} onClick={hideAndShow}>
         <div></div>
         <div></div>
         <div></div>
