@@ -112,7 +112,13 @@
   height: 10px;
   border-top: 2px solid #62f9d6;
 }
+/*  HIDING SELECTS SIDE */
 
+
+
+
+
+/* ANOTHER BUTTON SIGN */
 .Xsign {
   display: none;
 }
@@ -138,8 +144,10 @@
   position: absolute;
 
 }
+/* ANOTHER BUTTON SIGN */
 
-/*  HIDING SELECTS SIDE */
+
+
 
 .navbar button {
   margin-left: 15px;
