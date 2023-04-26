@@ -18,6 +18,8 @@ export default function Home() {
   const [hideNavbar, setHideNavbar] = useState('')
   const [filter, setFilter] = useState(false)
 
+  
+
   const changeFilter = (bool = false) => {
     setFilter(!bool)
   }
