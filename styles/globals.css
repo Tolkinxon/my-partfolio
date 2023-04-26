@@ -20,7 +20,6 @@
   flex-direction: column;
   align-items: center;
 }
-
 /**************  ALL CONTENTS PART ******/
 
 /****************** ICON'S CSS CODES  || ***********/
@@ -85,12 +84,10 @@
   background-color: #a8b2d1;
   margin: 0px auto;
 }
-
 /*                                    /\            */
 /****************** ICON'S CSS CODES  ||  ***********/
 
 /*********** SCROLL STYLES ************/
-
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -209,3 +206,17 @@
   transform: rotate(180deg);
 }
 /* X BUTTON OF  NAVBAR SIDE  */
+
+@media only screen and (max-width: 770px) {
+  .toggle {
+    display: flex;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .email {
+    display: none;
+  }
+}
