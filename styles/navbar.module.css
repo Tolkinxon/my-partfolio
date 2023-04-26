@@ -88,63 +88,11 @@
   color: #62f9d6;
 }
 
-/*  HIDING SELECTS SIDE */
-.hide_selects {
-  display: none;
-  position: absolute;
-  right: 20px;
-}
-
-.hide_selects > div:nth-child(1) {
-  width: 50px;
-  height: 10px;
-  border-top: 2px solid #62f9d6;
-}
-
-.hide_selects > div:nth-child(2) {
-  width: 40px;
-  height: 10px;
-  border-top: 2px solid #62f9d6;
-}
-
-.hide_selects > div:nth-child(3) {
-  width: 30px;
-  height: 10px;
-  border-top: 2px solid #62f9d6;
-}
-/*  HIDING SELECTS SIDE */
 
 
 
 
-/* ANOTHER BUTTON SIGN */
-.Xsign {
-  display: none;
-}
 
-.Xsign > div:nth-child(1) {
-  position: absolute;
-  top: 13px;
-  width: 25px;
-  border-top: 3px solid #62f9d6;
-  transform-origin: top right;
-  transform: rotate(50deg);
-}
-
-.Xsign > div:nth-child(2) {
-  display: none;
-  position: relative;
-}
-
-.Xsign > div:nth-child(3) {
-  width: 25px;
-  border-top: 3px solid #62f9d6;
-  transform-origin: top right;
-  transform: rotate(-45deg);
-  position: absolute;
-  bottom: 2px;
-}
-/* ANOTHER BUTTON SIGN */
 
 .navbar button {
   margin-left: 15px;
