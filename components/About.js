@@ -58,8 +58,6 @@ const About = () => {
           </ul>
           <ul>
             <li>TypeScript</li>
-            <li>Eleventy</li>
-            <li>Eleventy</li>
           </ul>
         </div>
       </div>
