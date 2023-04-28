@@ -10,7 +10,6 @@
   width: 60%;
   font-family: sans-serif;
   border: 2px solid blue;
-
 }
 
 .content > span {
@@ -100,6 +99,9 @@
   .about {
     display: flex;
     flex-direction: column;
+  }
+  .content {
+    width: 100%;
   }
   .image_wrapper {
     margin-top: 100px;
