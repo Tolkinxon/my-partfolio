@@ -18,8 +18,6 @@ export default function Home() {
   const [hideNavbar, setHideNavbar] = useState('')
   const [filter, setFilter] = useState(false)
 
-  
-
   const changeFilter = (bool = false) => {
     setFilter(!bool)
   }
@@ -71,8 +69,8 @@ export default function Home() {
                   }
             }
           >
-            <Icons />
             <div className="content">
+              <Icons />
               <Header />
               <About />
               <Experience />
