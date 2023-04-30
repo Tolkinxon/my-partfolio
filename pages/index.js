@@ -18,6 +18,8 @@ export default function Home() {
   const [hideNavbar, setHideNavbar] = useState('')
   const [filter, setFilter] = useState(false)
 
+  
+
   const changeFilter = (bool = false) => {
     setFilter(!bool)
   }
@@ -54,6 +56,8 @@ export default function Home() {
       ) : (
         <>
           <Navbar scroll={hideNavbar} changeFilter={changeFilter} />
+          <About />
+
           <div
             className="container"
             onScroll={(e) => logging(e)}
@@ -70,9 +74,8 @@ export default function Home() {
             }
           >
             <div className="content">
-              <Icons />
+            <Icons />
               <Header />
-              <About />
               <Experience />
               <SomeThingIveBuild />
               <OtherProjects />

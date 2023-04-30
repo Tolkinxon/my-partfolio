@@ -64,12 +64,11 @@
 /****************** ICON'S CSS CODES  ||  ***********/
 
 @media only screen and (max-width: 770px) {
-    .icons {
-        display: none;
-      }
-    
-      .email {
-        display: none;
-      }
+  .icons {
+    display: none;
+  }
 
+  .email {
+    display: none;
+  }
 }
