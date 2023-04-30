@@ -4,8 +4,6 @@
   justify-content: space-between;
   margin-top: 200px;
   color: #8892b0;
-  position: fixed;
-  border: 2px solid blue;
 }
 .content {
   width: 60%;
