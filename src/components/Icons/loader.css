@@ -1,0 +1,138 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: #020c1b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box_container {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-60deg);
+}
+
+.box {
+  position: absolute;
+  width: 103px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.box > div {
+  border-radius: 10px;
+  width: 1px;
+  height: 100%;
+  border: 3px solid #62f9d6;
+  position: absolute;
+}
+.box > div:nth-child(1) {
+  top: -100%;
+  left: 0px;
+  animation-timing-function: linear;
+}
+
+.box > div:nth-child(2) {
+  top: 100%;
+  right: 0px;
+  animation-timing-function: linear;
+}
+
+.box:nth-child(2) {
+  transform: rotate(120deg);
+}
+.box:nth-child(2) > div:nth-child(1) {
+  animation-name: line;
+  animation-duration: 0.1s;
+  animation-fill-mode: both;
+}
+.box:nth-child(2) > div:nth-child(2) {
+  animation-name: lineback;
+  animation-duration: 0.1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+.box:nth-child(1) {
+  transform: rotate(60deg);
+}
+.box:nth-child(1) > div:nth-child(1) {
+  animation-name: line;
+  animation-duration: 0.1s;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+}
+.box:nth-child(1) > div:nth-child(2) {
+  animation-name: lineback;
+  animation-duration: 0.1s;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+}
+
+.box:nth-child(3) > div:nth-child(1) {
+  animation-name: line;
+  animation-duration: 0.1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+.box:nth-child(3) > div:nth-child(2) {
+  animation-name: lineback;
+  animation-duration: 0.1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.box:nth-child(4) {
+  transform: rotate(60deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #62f9d6;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  opacity: 0;
+  animation-name: letter;
+  animation-delay: 1.5s;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes letter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes line {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(60px);
+  }
+}
+
+@keyframes lineback {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-60px);
+  }
+}
+
+@keyframes toLitte {
+  from{}
+  to{}
+  
+}
