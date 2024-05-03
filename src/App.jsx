@@ -45,42 +45,43 @@ function App() {
   }, [])
 
   return (
-    <>
-      {loader ? (
-        <Loader />
-      ) : (
-        <>
-          <Navbar scroll={hideNavbar} changeFilter={changeFilter} />
+    <Loader />
+    // <>
+    //   {loader ? (
+    //     <Loader />
+    //   ) : (
+    //     <>
+    //       <Navbar scroll={hideNavbar} changeFilter={changeFilter} />
 
-          <div
-            className="container"
-            onScroll={(e) => logging(e)}
-            style={
-              filter
-                ? {
-                    filter: 'blur(5px) brightness(0.7)',
-                    overflow: 'hidden',
-                  }
-                : {
-                    filter: 'blur(0px) brightness(1)',
-                    overflow: 'scroll',
-                  }
-            }
-          >
-            <div className="content">
-              <Icons />
-              <Header />
-              <About />
-              <Experience />
-              <SomeThingIveBuild />
-              <OtherProjects />
-              <WhatNext />
-              <DesignedBy />
-            </div>
-          </div>
-        </>
-      )}
-    </>
+    //       <div
+    //         className="container"
+    //         onScroll={(e) => logging(e)}
+    //         style={
+    //           filter
+    //             ? {
+    //                 filter: 'blur(5px) brightness(0.7)',
+    //                 overflow: 'hidden',
+    //               }
+    //             : {
+    //                 filter: 'blur(0px) brightness(1)',
+    //                 overflow: 'scroll',
+    //               }
+    //         }
+    //       >
+    //         <div className="content">
+    //           <Icons />
+    //           {/* <Header />
+    //           <About />
+    //           <Experience />
+    //           <SomeThingIveBuild />
+    //           <OtherProjects />
+    //           <WhatNext />
+    //           <DesignedBy /> */}
+    //         </div>
+    //       </div>
+    //     </>
+    //   )}
+    // </>
   )
 }
 
