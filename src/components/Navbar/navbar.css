@@ -1,0 +1,130 @@
+/*********** NAVBAR STYLES *************/
+.navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: calc(100vw - 6px);
+  background-color: rgba(10, 25, 47, 0.85);
+  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/********* SIX CORNER ********/
+.navbar__box-container {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.navbar__box-container:hover {
+  background-color: rgba(100, 255, 218, 0.2);
+}
+
+.navbar__box-item {
+  position: absolute;
+  width: 36px;
+  height: 20px;
+  border-right: 2px solid #62f9d6;
+  border-left: 2px solid #62f9d6;
+  transform-origin: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #62f9d6;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.navbar__box-item:nth-child(1) {
+  transform: rotate(60deg);
+}
+.navbar__box-item:nth-child(2) {
+  transform: rotate(120deg);
+}
+/********* SIX CORNER ********/
+
+
+.navbar__features-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.navbar__features > a {
+  color: #a4b0cd;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 12px;
+}
+
+.navbar__features > a > span {
+  margin-right: 1px;
+  color: #62f9d6;
+}
+
+.navbar__features > a:hover {
+  color: #62f9d6;
+}
+
+
+
+
+
+
+
+.navbar button {
+  margin-left: 15px;
+}
+
+/*********** NAVBAR STYLES *************/
+
+/* MEDIA QUERIES SIDE */
+@media only screen and (max-width: 770px) {
+  .navbar__features-wrapper {
+    position: absolute;
+    top: 0px;
+    right: -50vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    transition: 1s ease all;
+  }
+
+  .navbar__features {
+    right: 0;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: #112240;
+    justify-content: space-evenly;
+  }
+}
+
+/* MEDIA QUERIES SIDE */
+
+
+
+
+
+
+
