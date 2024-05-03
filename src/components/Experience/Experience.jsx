@@ -1,5 +1,4 @@
-import './experience.css'
-import './../../App.css'
+
 import { useState, useEffect } from 'react'
 
 const Experience = () => {

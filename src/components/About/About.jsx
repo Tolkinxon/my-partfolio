@@ -1,4 +1,3 @@
-import './about.css'
 import myImage from '../../images/myImage.jpg'
 import { useState } from 'react'
 
@@ -14,7 +13,7 @@ const About = () => {
 
   return (
     <div className='about'>
-      <div className='content'>
+      <div className='container '>
         <span>
           01. <span>About me</span> <div className='line'></div>
         </span>

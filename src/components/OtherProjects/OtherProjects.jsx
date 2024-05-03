@@ -1,4 +1,3 @@
-import './otherProjects.css'
 import { useState, useEffect } from 'react'
 
 const OtherProjects = () => {

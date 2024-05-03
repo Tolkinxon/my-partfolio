@@ -1,4 +1,3 @@
-import './icons.css'
 
 const Icons = () => {
   return (

@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import './navbar.css'
-import './../../App.css'
 
 const Navbar = ({ scroll, changeFilter }) => {
   const [clicking, setClicking] = useState(false)

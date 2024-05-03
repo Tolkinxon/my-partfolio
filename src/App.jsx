@@ -4,7 +4,6 @@ import About from './components/About/About';
 import Experience from './components/Experience/Experience'
 import SomeThingIveBuild from './components/SomeThingIveBuild/SomeThingIveBuild'
 import OtherProjects from './components/OtherProjects/OtherProjects'
-import WhatNext from './components/WhatNext/WhatNext'
 import DesignedBy from './components/DesignedBy/DesignedBy'
 import Icons from './components/Icons/Icons'
 import Loader from './components/Loader/Loader'
@@ -45,7 +44,9 @@ function App() {
   }, [])
 
   return (
-    <Loader />
+  
+        <Header />
+  
     // <>
     //   {loader ? (
     //     <Loader />

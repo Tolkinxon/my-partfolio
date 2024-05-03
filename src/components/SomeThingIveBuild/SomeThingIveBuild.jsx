@@ -1,4 +1,3 @@
-import './SomeThingIveBuild.css'
 import pnng from './../../images/image1.png'
 
 const SomeThingIveBuild = () => {
